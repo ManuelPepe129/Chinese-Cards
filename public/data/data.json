@@ -1,0 +1,37 @@
+{
+  "$schema": "./data.schema.json",
+  "characters": [
+    { "hanzi": "你", "pinyin": "nǐ", "italian": ["tu"], "tags": ["hsk1", "lesson-01", "pronouns"] },
+    { "hanzi": "好", "pinyin": "hǎo", "italian": ["buono", "bene"], "tags": ["hsk1", "lesson-01", "adjectives"] },
+    { "hanzi": "我", "pinyin": "wǒ", "italian": ["io"], "tags": ["hsk1", "lesson-01", "pronouns"] },
+    { "hanzi": "他", "pinyin": "tā", "italian": ["lui"], "tags": ["hsk1", "lesson-01", "pronouns"] },
+    { "hanzi": "她", "pinyin": "tā", "italian": ["lei"], "tags": ["hsk1", "lesson-01", "pronouns"] },
+    { "hanzi": "们", "pinyin": "men", "italian": ["suffisso del plurale per le persone"], "tags": ["hsk1", "lesson-01", "grammar"], "traditional": "們", "notes": "Es. 我们 (noi), 你们 (voi)." },
+    { "hanzi": "是", "pinyin": "shì", "italian": ["essere"], "tags": ["hsk1", "lesson-02", "verbs"] },
+    { "hanzi": "不", "pinyin": "bù", "italian": ["non"], "tags": ["hsk1", "lesson-02", "grammar"], "notes": "Davanti a una sillaba con quarto tono diventa bú: 不是 bú shì." },
+    { "hanzi": "人", "pinyin": "rén", "italian": ["persona", "uomo"], "tags": ["hsk1", "lesson-02", "people"] },
+    { "hanzi": "大", "pinyin": "dà", "italian": ["grande"], "tags": ["hsk1", "lesson-03", "adjectives"] },
+    { "hanzi": "小", "pinyin": "xiǎo", "italian": ["piccolo"], "tags": ["hsk1", "lesson-03", "adjectives"] },
+    { "hanzi": "水", "pinyin": "shuǐ", "italian": ["acqua"], "tags": ["hsk1", "lesson-03", "food"] },
+    { "hanzi": "吃", "pinyin": "chī", "italian": ["mangiare"], "tags": ["hsk1", "lesson-03", "verbs", "food"] },
+    { "hanzi": "喝", "pinyin": "hē", "italian": ["bere"], "tags": ["hsk1", "lesson-03", "verbs", "food"] },
+    { "hanzi": "一", "pinyin": "yī", "italian": ["uno"], "tags": ["hsk1", "lesson-04", "numbers"] },
+    { "hanzi": "二", "pinyin": "èr", "italian": ["due"], "tags": ["hsk1", "lesson-04", "numbers"] },
+    { "hanzi": "学生", "pinyin": "xuésheng", "italian": ["studente", "studentessa"], "tags": ["hsk1", "lesson-02", "people"], "traditional": "學生" },
+    { "hanzi": "老师", "pinyin": "lǎoshī", "italian": ["insegnante", "professore"], "tags": ["hsk1", "lesson-02", "people"], "traditional": "老師" },
+    { "hanzi": "谢谢", "pinyin": "xièxie", "italian": ["grazie"], "tags": ["hsk1", "lesson-01", "greetings"], "traditional": "謝謝" },
+    { "hanzi": "中国", "pinyin": "Zhōngguó", "italian": ["Cina"], "tags": ["hsk1", "lesson-02", "places"], "traditional": "中國" }
+  ],
+  "sentences": [
+    { "hanzi": "你好", "pinyin": "nǐ hǎo", "italian": ["Ciao", "Buongiorno"], "tags": ["hsk1", "lesson-01", "greetings"] },
+    { "hanzi": "你好吗？", "pinyin": "nǐ hǎo ma?", "italian": ["Come stai?"], "tags": ["hsk1", "lesson-01", "greetings"], "traditional": "你好嗎？" },
+    { "hanzi": "我很好，谢谢。", "pinyin": "wǒ hěn hǎo, xièxie.", "italian": ["Sto bene, grazie."], "tags": ["hsk1", "lesson-01", "greetings"], "traditional": "我很好，謝謝。" },
+    { "hanzi": "我是学生。", "pinyin": "wǒ shì xuésheng.", "italian": ["Sono uno studente.", "Sono una studentessa."], "tags": ["hsk1", "lesson-02", "introductions"], "traditional": "我是學生。" },
+    { "hanzi": "我不是老师。", "pinyin": "wǒ bú shì lǎoshī.", "italian": ["Non sono un insegnante."], "tags": ["hsk1", "lesson-02", "introductions"], "traditional": "我不是老師。" },
+    { "hanzi": "我是意大利人。", "pinyin": "wǒ shì Yìdàlì rén.", "italian": ["Sono italiano.", "Sono italiana."], "tags": ["hsk1", "lesson-02", "introductions"] },
+    { "hanzi": "你叫什么名字？", "pinyin": "nǐ jiào shénme míngzi?", "italian": ["Come ti chiami?"], "tags": ["hsk1", "lesson-02", "introductions"], "traditional": "你叫什麼名字？" },
+    { "hanzi": "再见", "pinyin": "zàijiàn", "italian": ["Arrivederci", "Ciao (quando ci si saluta)"], "tags": ["hsk1", "lesson-01", "greetings"], "traditional": "再見" },
+    { "hanzi": "对不起", "pinyin": "duìbuqǐ", "italian": ["Scusa", "Mi dispiace"], "tags": ["hsk1", "lesson-03", "politeness"], "traditional": "對不起" },
+    { "hanzi": "没关系", "pinyin": "méi guānxi", "italian": ["Non fa niente", "Non c’è problema"], "tags": ["hsk1", "lesson-03", "politeness"], "traditional": "沒關係" }
+  ]
+}
