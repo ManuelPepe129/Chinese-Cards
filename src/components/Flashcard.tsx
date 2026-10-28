@@ -1,5 +1,6 @@
 import type { CSSProperties } from 'react';
 import type { Entry } from '../data/schema';
+import { BrushText } from './BrushText';
 
 interface Props {
   entry: Entry;
@@ -26,9 +27,7 @@ function Hanzi({ text }: { text: string }) {
           <path d="M50 0V100M0 50H100M0 0L100 100M100 0L0 100" />
         </svg>
       )}
-      <span className="hanzi" lang="zh-Hans">
-        {text}
-      </span>
+      <BrushText text={text} />
     </span>
   );
 }

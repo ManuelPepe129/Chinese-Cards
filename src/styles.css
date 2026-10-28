@@ -231,7 +231,12 @@ code { font-size: 0.92em; }
 /* Sentence cards: front pinyin */
 .front-pinyin { font-size: clamp(1.1rem, 4dvh, 1.5rem); color: var(--accent); font-weight: 500; }
 .glyph[data-single='false'] { max-width: 100%; }
-.glyph[data-single='false'] .hanzi { line-height: 1.2; text-wrap: balance; }
+.brush { display: flex; flex-direction: column; align-items: center; transition: opacity 0.1s; }
+.brush[data-ready='false'] { opacity: 0; }
+.brush-line { display: flex; justify-content: center; }
+.brush-ch { display: block; width: 1em; height: 1em; }
+.brush-ch path { fill: currentColor; }
+.brush-fallback { display: grid; place-items: center; font-family: var(--font-zh); line-height: 1; }
 
 /* Browse */
 .browse { min-height: 0; }
