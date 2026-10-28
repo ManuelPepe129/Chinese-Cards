@@ -1,10 +1,180 @@
 type,hanzi,pinyin,italian,tags
+character,你,nǐ,tu,hsk1;lezione-1a;pronouns
+character,好,hǎo,bene;buono,hsk1;lezione-1a;adjectives
+character,你好,nǐ hǎo,ciao;salve,hsk1;lezione-1a;greetings
+character,吗,ma,particella interrogativa (domande sì/no),hsk1;lezione-1a;particles
+character,我,wǒ,io,hsk1;lezione-1a;pronouns
+character,很,hěn,molto,hsk1;lezione-1a;adverbs
+character,呢,ne,particella interrogativa (e tu?),hsk1;lezione-1a;particles
+character,再见,zàijiàn,arrivederci,hsk1;lezione-1a;greetings
+character,怎么样,zěnmeyàng,come va?;com'è?,hsk1;lezione-1a;questions
+character,都,dōu,tutti;entrambi,hsk1;lezione-1a;adverbs
+
+character,是,shì,essere,hsk1;lezione-1b;verbs
+character,不,bù,non,hsk1;lezione-1b;adverbs
+character,您,nín,lei (forma di cortesia),hsk1;lezione-1b;pronouns
+character,他,tā,lui;egli,hsk1;lezione-1b;pronouns
+character,她,tā,lei,hsk1;lezione-1b;pronouns
+character,它,tā,esso (neutro),hsk1;lezione-1b;pronouns
+character,谁,shéi,chi,hsk1;lezione-1b;questions
+character,老师,lǎoshī,insegnante;professore,hsk1;lezione-1b;people
+character,先生,xiānsheng,signore,hsk1;lezione-1b;people
+character,请问,qǐngwèn,scusi (per fare una domanda),hsk1;lezione-1b;greetings
+character,对不起,duìbuqǐ,scusa;scusi,hsk1;lezione-1b;greetings
+character,没关系,méiguānxi,non importa,hsk1;lezione-1b;greetings
+character,谢谢,xièxie,grazie,hsk1;lezione-1b;greetings
+character,不客气,bú kèqi,prego;non c'è di che,hsk1;lezione-1b;greetings
+character,们,men,suffisso di plurale,hsk1;lezione-1b;particles
+character,我们,wǒ men,noi,hsk1;lezione-1b;pronouns
+character,你们,nǐ men,voi,hsk1;lezione-1b;pronouns
+character,他们,tā men,loro (maschile),hsk1;lezione-1b;pronouns
+character,她们,tā men,loro (femminile),hsk1;lezione-1b;pronouns
+
+character,零,líng,zero,numbers;lezione-1b
+character,一,yī,uno,numbers;lezione-1b
+character,二,èr,due,numbers;lezione-1b
+character,三,sān,tre,numbers;lezione-1b
+character,四,sì,quattro,numbers;lezione-1b
+character,五,wǔ,cinque,numbers;lezione-1b
+character,六,liù,sei,numbers;lezione-1b
+character,七,qī,sette,numbers;lezione-1b
+character,八,bā,otto,numbers;lezione-1b
+character,九,jiǔ,nove,numbers;lezione-1b
+character,十,shí,dieci,numbers;lezione-1b
+
+character,女,nǚ,donna,hsk1;words
+character,男,nán,uomo,hsk1;words
+character,田,tián,campo,hsk1;words
+character,力,lì,forza,hsk1;words
 character,爱,ài,amare;amore,hsk1;lesson-05;verbs
+character,晚上,wǎnshàng,sera,hsk1;words
 character,家,jiā,casa;famiglia,hsk1;lesson-05;places
-character,朋友,péngyou,amico;amica,hsk1;lesson-05;people
-character,今天,jīntiān,oggi,hsk1;lesson-05;time
-character,明天,míngtiān,domani,hsk1;lesson-05;time
-character,你,nǐ,tu,hsk1;lesson-01;pronouns
+character,人,rén,persona,hsk1;words
+character,从,cóng,seguire,verbs
+character,众,zhòng,folla,words
+character,妈,mā,madre,words
+character,骂,mà,sgridare,verbs
+
+character,拔,bá,estrarre,verbs
+character,爸,bà,padre,words;relatives
+character,麻,má,lino,words
+character,马,mǎ,cavallo,words
+character,靶,bǎ,bersaglio,words
+
+character,猫,māo,gatto,words
+character,买,mǎi,vendere,words
+character,妈妈,māma,madre/mamma,words;relatives
+character,妹妹,mèi mei,sorella minore (sorellina),words;relatives
+character,奶奶,nǎi nai,nonna (paterna),words;relatives
+character,大,dà,grande,adjectives
+character,读,dú,leggere,verbs
+character,低,dī,basso,adjectives
+character,弟弟,dìdi,fratello minore,words;relatives
+character,渴,kě,assetato,adjectives
+character,哭,kū,piangere,verbs
+character,口,kǒu,bocca,words
+character,喝,hē,bere,verbs
+character,海,hǎi,mare,words
+character,鸡,jī,pollo/gallina,words
+character,走,zǒu,camminare,verbs
+character,火,huǒ,fuoco,words
+character,家,jiā,casa/famiglia,words;relatives
+character,字,zì,carattere (scritto),words
+character,盐,yán,sale,words
+character,有,yǒu,avere/c'è,verbs
+character,爷爷,yéye,nonno (paterno),words;relatives
+character,爱,ài,amore/amare,verbs;words
+
+character,鱼,yú,pesce,words
+character,雨,yǔ,pioggia,words
+character,月,yuè,luna,words
+character,圆,yuán,rotondo/cerchio,words
+character,云,yún,nuvola,words
+character,冰,bīng,ghiaccio,words
+character,白,bái,bianco/bianca,adjectives;colors
+character,包,bāo,borsa/zaino/pacchetto,words
+character,宝宝,bǎo bao,bambino/bebè,words
+character,méi,没,non (avere) / non,particles
+character,门,mén,porta,words
+character,苗,miáo,piantina/germoglio,words
+character,短,duǎn,corto/corta,adjectives
+character,对,duì,corretto/giusto,adjectives
+character,多,duō,molto/tanto,adverbs
+character,汤,tāng,zuppa/minestra,words
+character,听,tīng,ascoltare,verbs
+character,腿,tuǐ,gamba,words
+character,鸟,niǎo,uccello,words
+character,牛奶,niúnǎi,latte,words 
+character,狼,láng,lupo,words
+character,累,léi,stanco/stanca,adjectives
+character,来,lái,venire,verbs
+
+character,给,gěi,dare,verbs
+character,黑,hēi,nero/nera,adjectives;colors
+character,桥,qiáo,ponte,words
+character,高,gāo,alto/alta,adjectives
+character,锅,guō,pentola,words
+character,狗,gǒu,cane,words
+character,灰,huī,grigio/grigia,adjectives;colors
+character,去,qù,andare,verbs
+character,星星,xīng xīng,stella/stelle,words
+character,小,xiǎo,piccolo/piccola,adjectives
+character,洗,xǐ,lavare,verbs
+
+character,杯子,bēi zi,Bicchiere/Tazza,words
+character,面包,miàn bāo,Pane,words
+character,大象,dà xiàng,Elefante,words
+character,老师,lǎo shī,Insegnante,words
+character,小狗,xiǎo gǒu,Cagnolino,words
+character,桌子,zhuō zi,Tavolo,words
+character,汉语,hàn yǔ,La lingua cinese,words
+character,手机,shǒu jī,Cellulare,words
+character,裙子,qún zi,Gonna,words
+character,学校,xué xiào,Scuola,words
+character,喝水,hē shuǐ,Bere acqua,verbs
+character,说话,shuō huà,Parlare,verbs
+character,开口,kāi kǒu,Aprire la bocca,verbs
+character,出去,chū qù,Uscire,verbs
+character,做饭,zuò fàn,Cucinare,verbs
+character,学习,xué xí,Studiare,verbs
+character,帮忙,bāng máng,Aiutare,verbs
+character,军队,jūn duì,Esercito,words
+character,没有,méi yǒu,Non (avere),particles
+character,喜欢,xǐ huan,Piacere,words
+
+character,纸,zhǐ,carta,words
+character,猪,zhū,maiale,words
+character,shàng,上,salire/sopra,verbs;adverbs
+character,shé,蛇,serpente,words
+character,书,shū,libro,words
+character,蜘蛛,zhī zhū,ragno,words
+character,水,shuǐ,acqua,words
+character,树,shù,albero,words
+character,手,shǒu,mano,words
+character,说,shuō,dire/parlare,verbs
+
+sentence,你呢？,nǐ ne?,E tu?,hsk1;lezione-1a;greetings
+sentence,怎么样？,zěnmeyàng?,Come va?,hsk1;lezione-1a;greetings
+sentence,还可以。,hái kěyǐ.,Non c'è male,hsk1;lezione-1a;greetings
+sentence,都好吗？,dōu hǎo ma?,Va tutto bene?;Tutto bene?,hsk1;lezione-1a;greetings
+sentence,你好！,nǐ hǎo!,Ciao!;Salve!,hsk1;lezione-1a;greetings
+sentence,再见！,zàijiàn!,Arrivederci!,hsk1;lezione-1a;greetings
+sentence,你好吗？,nǐ hǎo ma?,Come stai?,hsk1;lezione-1a;greetings
+sentence,我很好。,wǒ hěn hǎo.,Sto bene.,hsk1;lezione-1a;greetings
+sentence,我很好。你呢？,wǒ hěn hǎo. nǐ ne?,Sto bene. E tu?,hsk1;lezione-1a;greetings
+sentence,晚上好,wǎn shàng hǎo,Buonasera,hsk1;greetings
+sentence,不太好,bú tài hǎo,Non troppo bene,hsk1;lezione-1a;greetings
+sentence,都好，都好。,dōu hǎo，dōu hǎo. ,Tutto bene，tutto bene,hsk1;lezione-1a;greetings
+
+sentence,我是小云。,wǒ shì ...,Sono ... (Mi chiamo).,hsk1;lezione-1b;introductions
+sentence,你好！我是马可。,nǐ hǎo! wǒ shì mǎkě.,Ciao! Sono Marco.,hsk1;lezione-1b;introductions
+sentence,我不是白老师。,wǒ bú shì bái lǎoshī.,Non sono il professor Bai.,hsk1;lezione-1b;people
+sentence,请问，谁是白老师？,"qǐngwèn, shéi shì bái lǎoshī?","Scusi, chi è il professor Bai?",hsk1;lezione-1b;people
+sentence,对不起！,duìbuqǐ!,Scusa!;Scusi!,hsk1;lezione-1b;greetings
+sentence,没关系！,méi guānxi!,Non importa!,hsk1;lezione-1b;greetings
+sentence,谢谢！,xièxie!,Grazie!,hsk1;lezione-1b;greetings
+sentence,不客气！,bú kèqi!,Prego!;Non c'è di che!,hsk1;lezione-1b;greetings
+sentence,谁是...？,Shéi shì,Chi è ...?,lezione-1b;introductions
+
+
 sentence,我爱你。,wǒ ài nǐ.,Ti amo;Ti voglio bene.,hsk1;lesson-05;phrases
-sentence,明天见！,míngtiān jiàn!,A domani!,hsk1;lesson-05;greetings
-sentence,我的朋友是老师。,wǒ de péngyou shì lǎoshī.,Il mio amico è un insegnante.;La mia amica è un’insegnante.,hsk1;lesson-05;people
