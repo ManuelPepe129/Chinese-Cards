@@ -19,8 +19,6 @@ export const DEFAULT_OPTIONS: StudyOptions = { shuffle: true, reverse: false, sh
 
 interface Props {
   entries: Entry[];
-  /** Entries that are sentences (the rest are single characters or words). Only they get "Pinyin on front". */
-  sentenceEntries?: ReadonlySet<Entry>;
   /** Lifted to the parent so the toggles survive switching to Browse and back. */
   options: StudyOptions;
   onOptionsChange: (patch: Partial<StudyOptions>) => void;
@@ -28,9 +26,7 @@ interface Props {
 }
 
 const SWIPE_MIN_PX = 50;
-const NO_SENTENCES: ReadonlySet<Entry> = new Set();
-
-export function StudyView({ entries, sentenceEntries = NO_SENTENCES, options, onOptionsChange, empty }: Props) {
+export function StudyView({ entries, options, onOptionsChange, empty }: Props) {
   const { shuffle, reverse, showPinyin } = options;
   const [round, setRound] = useState(0); // bumped to reshuffle after a full pass
   const [pos, setPos] = useState(0);
@@ -42,7 +38,6 @@ export function StudyView({ entries, sentenceEntries = NO_SENTENCES, options, on
     [entries, shuffle, round],
   );
   const n = order.length;
-  const hasSentences = entries.some((e) => sentenceEntries.has(e));
 
   const step = useCallback(
     (delta: 1 | -1) => {
@@ -172,7 +167,7 @@ export function StudyView({ entries, sentenceEntries = NO_SENTENCES, options, on
             entry={entry}
             flipped={flipped}
             reverse={reverse}
-            showPinyin={showPinyin && !reverse && sentenceEntries.has(entry)}
+            showPinyin={showPinyin && !reverse}
             area={box}
             strokesRef={strokesRef}
             onPlayingChange={setStrokesPlaying}
@@ -234,17 +229,15 @@ export function StudyView({ entries, sentenceEntries = NO_SENTENCES, options, on
           >
             Italian first
           </button>
-          {hasSentences && (
-            <button
-              type="button"
-              className="btn"
-              aria-pressed={showPinyin && !reverse}
-              disabled={reverse}
-              onClick={() => onOptionsChange({ showPinyin: !showPinyin })}
-            >
-              Pinyin on front
-            </button>
-          )}
+          <button
+            type="button"
+            className="btn"
+            aria-pressed={showPinyin && !reverse}
+            disabled={reverse}
+            onClick={() => onOptionsChange({ showPinyin: !showPinyin })}
+          >
+            Pinyin on front
+          </button>
         </div>
       </div>
     </div>

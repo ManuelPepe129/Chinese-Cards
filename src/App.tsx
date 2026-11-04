@@ -49,7 +49,6 @@ function Workspace({ data, issues }: { data: Dataset; issues: DataIssue[] }) {
   const shownChars = useMemo(() => (showChars ? filteredChars : []), [showChars, filteredChars]);
   const shownSents = useMemo(() => (showSents ? filteredSents : []), [showSents, filteredSents]);
   const studyEntries = useMemo(() => [...shownChars, ...shownSents], [shownChars, shownSents]);
-  const sentenceEntries = useMemo(() => new Set(sentences), [sentences]);
 
   // What the type filter lets through (before the tag filter), for chip counts and the "x of y" total.
   const scope = useMemo(
@@ -130,7 +129,6 @@ function Workspace({ data, issues }: { data: Dataset; issues: DataIssue[] }) {
         ) : (
           <StudyView
             entries={studyEntries}
-            sentenceEntries={sentenceEntries}
             options={options}
             onOptionsChange={patchOptions}
             empty={empty}

@@ -16,16 +16,22 @@ export function matchEntries<T extends { tags: readonly string[] }>(
   });
 }
 
-/** "hsk1" → "hsk", "lesson-01" → "lesson", "pronouns" → "other". */
+export const CLASS_GROUP = 'classe';
+
+/**
+ * "lezione-1a" → "lezione", "hsk1" → "hsk", "pronouns" → "other".
+ * Grammatical classes are written as in the glossary and always contain a dot ("sost.", "pron. inter."): they form the "classe" group.
+ */
 export function tagPrefix(tag: string): string {
+  if (tag.includes('.')) return CLASS_GROUP;
   const m = /^(\p{L}+)(?=[\d-])/u.exec(tag);
   return m ? m[1] : OTHER_GROUP;
 }
 
-const ACRONYMS: Record<string, string> = { hsk: 'HSK' };
+const LABELS: Record<string, string> = { hsk: 'HSK', [CLASS_GROUP]: 'Classe grammaticale' };
 
 export function groupLabel(key: string): string {
-  return ACRONYMS[key] ?? key.charAt(0).toUpperCase() + key.slice(1);
+  return LABELS[key] ?? key.charAt(0).toUpperCase() + key.slice(1);
 }
 
 export interface TagInfo {

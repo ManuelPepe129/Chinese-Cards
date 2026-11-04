@@ -47,7 +47,7 @@ maskable 512 and the iOS touch icon). To test the service worker locally use `np
 
 | Mode | What it does |
 | --- | --- |
-| Study | Flashcards for characters **and** sentences together (`mode=study`), with a "Pinyin on front" toggle that applies to sentences. |
+| Study | Flashcards for characters **and** sentences together (`mode=study`), with a "Pinyin on front" toggle that applies to every card. |
 | Browse | Searchable list of the characters and sentences with their tags (`mode=browse`). |
 
 The **Characters / Sentences** buttons at the top of the filter panel choose which kinds of card are shown, in both modes. Both are
@@ -70,7 +70,9 @@ Italian and tags, and needs every word to match. The tag filter applies in Brows
 ## Tag filters and URL state
 
 Chips are built from the tags in the data and grouped by prefix: the leading letters before a digit or `-`
-(`hsk1` → HSK, `lesson-01` → Lesson); everything else goes under Other. Chips show how many cards have the tag.
+(`lezione-1a` → Lezione); tags containing a dot are the grammatical classes of the textbook glossary (`sost.`, `avv.`,
+`pron. inter.`, `num.`, …) and form the **Classe grammaticale** group; everything else goes under Other. Chips show how many
+cards have the tag.
 
 - Select several tags and choose **Match all** (AND) or **Match any** (OR). Nothing selected = all cards.
 - The panel header shows the live count ("12 of 20 cards"). With zero matches you get shortcuts to "Match any" / "Clear filters".
@@ -81,7 +83,7 @@ Chips are built from the tags in the data and grouped by prefix: the leading let
 The selection lives only in the query string, so a study set can be bookmarked and opened on any device:
 
 ```
-?tags=hsk1,lesson-01&match=all&mode=study&types=sentences
+?tags=sost.,lezione-1a&match=all&mode=study&types=characters
 ```
 
 Tags in the URL that don't exist in the data stay visible as dashed chips with count 0 (so a stale bookmark never changes
@@ -97,12 +99,12 @@ Single source of truth: `public/data/data.json`, with two arrays, `characters` a
 | `hanzi` | yes | Simplified. Must be unique within its array. Multi-character words are allowed. |
 | `pinyin` | yes | Tone marks (`nǐ`), not numbers (`ni3`). |
 | `italian` | yes | Array; the first item is the primary meaning. |
-| `tags` | no | Array, case-insensitive (stored lowercase), e.g. `hsk1`, `lesson-01`. No commas (they separate tags in the URL). |
+| `tags` | no | Array, case-insensitive (stored lowercase), e.g. `pron. pers.`, `lezione-1a`. No commas (they separate tags in the URL). |
 | `notes` | no | Free text shown on the back. |
 | `traditional` | no | Traditional form, shown on the back. |
 
 ```json
-{ "hanzi": "你", "pinyin": "nǐ", "italian": ["tu"], "tags": ["hsk1", "lesson-01", "pronouns"] }
+{ "hanzi": "你", "pinyin": "nǐ", "italian": ["tu", "ti", "te"], "tags": ["pron. pers.", "lezione-1a"] }
 ```
 
 On load the file is validated with Zod (`src/data/schema.ts`). Invalid entries, unknown keys and duplicate hanzi are
@@ -171,12 +173,12 @@ npm run import:csv -- path/to/file.csv --data other.json
 
 ```csv
 type,hanzi,pinyin,italian,tags
-character,爱,ài,amare;amore,hsk1;lesson-05;verbs
-sentence,明天见！,míngtiān jiàn!,A domani!,hsk1;lesson-05;greetings
+character,爱,ài,amare;amore,v.;lezione-4c
+sentence,明天见！,míngtiān jiàn!,A domani!,lezione-5c
 ```
 
-A ready-made example is in `sample-data/sample.csv` (it deliberately contains one entry that already exists, so you can see
-duplicates being skipped; try it with `--dry-run`).
+`sample-data/sample.csv` mirrors the current `data.json` (unit 1, lessons 1a–1d, with a `notes` column), so importing it into an
+empty list rebuilds the data. The previous list is kept as `sample-data/data.OLD.json` and `sample-data/sample.OLD.csv`.
 
 | Column | Required | Notes |
 | --- | --- | --- |

@@ -60,16 +60,15 @@ describe('modes', () => {
     expect(html).toContain('greetings');
   });
 
-  it('StudyView offers "Pinyin on front" only for sentences', () => {
-    const e = entry('你好');
-    const base = { entries: [e], options: DEFAULT_OPTIONS, onOptionsChange: noop };
-    expect(renderToString(<StudyView {...base} sentenceEntries={new Set([e])} />)).toContain('Pinyin on front');
-    expect(renderToString(<StudyView {...base} />)).not.toContain('Pinyin on front');
+  it('StudyView offers "Pinyin on front" for every card, single characters included', () => {
+    const base = { options: DEFAULT_OPTIONS, onOptionsChange: noop };
+    expect(renderToString(<StudyView {...base} entries={[entry('你好')]} />)).toContain('Pinyin on front');
+    expect(renderToString(<StudyView {...base} entries={[entry('你')]} />)).toContain('Pinyin on front');
   });
 
   it('shows pinyin on the front when enabled', () => {
     const e = { ...entry('你好'), pinyin: 'nǐ hǎo' };
-    const html = renderToString(<StudyView entries={[e]} sentenceEntries={new Set([e])} options={{ ...DEFAULT_OPTIONS, showPinyin: true }} onOptionsChange={noop} />);
+    const html = renderToString(<StudyView entries={[e]} options={{ ...DEFAULT_OPTIONS, showPinyin: true }} onOptionsChange={noop} />);
     expect(html).toContain('front-pinyin');
   });
 });

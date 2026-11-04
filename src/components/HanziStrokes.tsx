@@ -30,7 +30,9 @@ const GUIDE = 'M50 0V100M0 50H100M0 0L100 100M100 0L0 100';
 export function HanziStrokes({ text, area, maxCell, ref, onPlayingChange }: Props) {
   const chars = useMemo(() => [...text], [text]);
   const status = useStrokeAvailability(useMemo(() => hanChars(text), [text]));
-  const drawable = chars.map((c) => isHan(c) && status(c) !== 'missing');
+  // Writers are only created once the stroke data is known to exist; until then the cell stays empty.
+  const drawable = chars.map((c) => isHan(c) && status(c) === 'ok');
+  const loading = chars.map((c) => isHan(c) && status(c) === 'loading');
   const drawKey = drawable.map(Number).join('');
   const single = chars.length === 1;
   const cell = glyphCell({ count: chars.length, width: area.w, height: area.h, maxCell });
@@ -133,7 +135,7 @@ export function HanziStrokes({ text, area, maxCell, ref, onPlayingChange }: Prop
                 )}
                 {drawable[i] ? (
                   <span className="sw-host" ref={(el) => void (hostRefs.current[i] = el)} />
-                ) : (
+                ) : loading[i] ? null : (
                   <span className="brush-fallback" style={{ fontSize: cell * 0.8 }}>
                     {c}
                   </span>

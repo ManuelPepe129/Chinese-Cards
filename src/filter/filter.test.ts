@@ -41,6 +41,12 @@ describe('tagPrefix', () => {
     expect(tagPrefix('lesson-01')).toBe('lesson');
     expect(tagPrefix('pronouns')).toBe('other');
     expect(tagPrefix('tema-cibo')).toBe('tema');
+    expect(tagPrefix('lezione-1a')).toBe('lezione');
+  });
+  it('puts glossary classes (they contain a dot) in the "classe" group', () => {
+    expect(tagPrefix('sost.')).toBe('classe');
+    expect(tagPrefix('pron. inter.')).toBe('classe');
+    expect(tagPrefix('part. modale inter.')).toBe('classe');
   });
 });
 
@@ -58,6 +64,12 @@ describe('groupTags', () => {
     ]);
     expect(groups[1].tags.map((t) => t.tag)).toEqual(['lesson-2', 'lesson-10']);
     expect(groups[2].tags.map((t) => t.tag)).toEqual(['food', 'verbs']);
+  });
+  it('labels the class group and sorts lessons naturally', () => {
+    const groups = groupTags([e('1', 'sost.', 'lezione-1b'), e('2', 'pron. inter.', 'lezione-1a')]);
+    expect(groups.map((g) => g.label)).toEqual(['Classe grammaticale', 'Lezione']);
+    expect(groups[0].tags.map((t) => t.tag)).toEqual(['pron. inter.', 'sost.']);
+    expect(groups[1].tags.map((t) => t.tag)).toEqual(['lezione-1a', 'lezione-1b']);
   });
   it('lists tags from the universe with count 0 when absent from the current view', () => {
     const view = [e('1', 'hsk1')];
