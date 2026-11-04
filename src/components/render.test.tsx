@@ -21,6 +21,9 @@ describe('render smoke tests', () => {
         groups={groupTags(entries, ['hsk1', 'hsk9'])}
         selected={['hsk1', 'hsk9']}
         match="all"
+        types={['characters', 'sentences']}
+        typeCounts={{ characters: 1, sentences: 1 }}
+        onToggleType={noop}
         matched={2}
         total={2}
         open={false}
@@ -35,10 +38,12 @@ describe('render smoke tests', () => {
     expect(html).toContain('aria-pressed="true"');
     expect(html).toContain('data-missing="true"');
     expect(html).toContain('Match all');
+    expect(html).toContain('Characters');
+    expect(html).toContain('Sentences');
   });
 
   it('StudyView renders a card, or the empty slot when there is nothing to show', () => {
-    const base = { kind: 'characters' as const, options: DEFAULT_OPTIONS, onOptionsChange: noop };
+    const base = { options: DEFAULT_OPTIONS, onOptionsChange: noop };
     expect(text(renderToString(<StudyView {...base} entries={[entry('你', 'hsk1')]} />))).toContain('1 / 1');
     expect(renderToString(<StudyView {...base} entries={[]} empty={<p>nothing here</p>} />)).toContain('nothing here');
   });
@@ -56,14 +61,15 @@ describe('modes', () => {
   });
 
   it('StudyView offers "Pinyin on front" only for sentences', () => {
-    const base = { entries: [entry('你好')], options: DEFAULT_OPTIONS, onOptionsChange: noop };
-    expect(renderToString(<StudyView {...base} kind="sentences" />)).toContain('Pinyin on front');
-    expect(renderToString(<StudyView {...base} kind="characters" />)).not.toContain('Pinyin on front');
+    const e = entry('你好');
+    const base = { entries: [e], options: DEFAULT_OPTIONS, onOptionsChange: noop };
+    expect(renderToString(<StudyView {...base} sentenceEntries={new Set([e])} />)).toContain('Pinyin on front');
+    expect(renderToString(<StudyView {...base} />)).not.toContain('Pinyin on front');
   });
 
   it('shows pinyin on the front when enabled', () => {
     const e = { ...entry('你好'), pinyin: 'nǐ hǎo' };
-    const html = renderToString(<StudyView entries={[e]} kind="sentences" options={{ ...DEFAULT_OPTIONS, showPinyin: true }} onOptionsChange={noop} />);
+    const html = renderToString(<StudyView entries={[e]} sentenceEntries={new Set([e])} options={{ ...DEFAULT_OPTIONS, showPinyin: true }} onOptionsChange={noop} />);
     expect(html).toContain('front-pinyin');
   });
 });
@@ -79,7 +85,7 @@ describe('SpeakButton', () => {
   });
   it('is not rendered by StudyView when the device has no voice (e.g. on the server)', () => {
     const html = renderToString(
-      <StudyView kind="characters" options={DEFAULT_OPTIONS} onOptionsChange={noop} entries={[entry('你')]} />,
+      <StudyView options={DEFAULT_OPTIONS} onOptionsChange={noop} entries={[entry('你')]} />,
     );
     expect(html).not.toContain('class="speak"');
   });

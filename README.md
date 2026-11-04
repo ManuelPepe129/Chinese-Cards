@@ -47,9 +47,12 @@ maskable 512 and the iOS touch icon). To test the service worker locally use `np
 
 | Mode | What it does |
 | --- | --- |
-| Characters | Flashcards for `characters` (`mode=cards`). |
-| Sentences | Same cards for `sentences` (`mode=sentences`), plus a "Pinyin on front" toggle. Long sentences wrap onto several lines. |
-| Browse | Searchable list of all characters and sentences with their tags (`mode=browse`). |
+| Study | Flashcards for characters **and** sentences together (`mode=study`), with a "Pinyin on front" toggle that applies to sentences. |
+| Browse | Searchable list of the characters and sentences with their tags (`mode=browse`). |
+
+The **Characters / Sentences** buttons at the top of the filter panel choose which kinds of card are shown, in both modes. Both are
+on by default; at least one always stays on (`types=characters` or `types=sentences` in the URL). Old `mode=cards` and
+`mode=sentences` links still work.
 
 Browse search ignores tone marks, accents and case (`ni`, `nǐ`, `nihao`, `perche` all work), matches hanzi, traditional, pinyin,
 Italian and tags, and needs every word to match. The tag filter applies in Browse too. The search text is not stored in the URL.
@@ -78,7 +81,7 @@ Chips are built from the tags in the data and grouped by prefix: the leading let
 The selection lives only in the query string, so a study set can be bookmarked and opened on any device:
 
 ```
-?tags=hsk1,lesson-01&match=all&mode=cards
+?tags=hsk1,lesson-01&match=all&mode=study&types=sentences
 ```
 
 Tags in the URL that don't exist in the data stay visible as dashed chips with count 0 (so a stale bookmark never changes
@@ -105,7 +108,7 @@ Single source of truth: `public/data/data.json`, with two arrays, `characters` a
 On load the file is validated with Zod (`src/data/schema.ts`). Invalid entries, unknown keys and duplicate hanzi are
 **skipped and listed in a banner** — the app keeps working with the rest. Duplicates are detected by hanzi only; the first one wins.
 
-`characters` feed Characters mode and `sentences` feed Sentences mode; Browse shows both. Duplicates are checked within each array.
+`characters` and `sentences` are shown together, and the Characters / Sentences filter narrows them. Duplicates are checked within each array.
 
 ## Audio
 

@@ -1,6 +1,6 @@
 import { MODES, type Mode } from '../url/urlState';
 
-const LABELS: Record<Mode, string> = { cards: 'Characters', sentences: 'Sentences', browse: 'Browse' };
+const LABELS: Record<Mode, string> = { study: 'Study', browse: 'Browse' };
 
 export function ModeNav({ mode, onChange }: { mode: Mode; onChange: (m: Mode) => void }) {
   return (

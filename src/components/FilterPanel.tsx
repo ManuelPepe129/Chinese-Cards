@@ -1,13 +1,20 @@
 import { useEffect, useRef } from 'react';
 import type { MatchMode, TagGroup } from '../filter/filter';
+import { ENTRY_TYPES, type EntryType } from '../url/urlState';
+
+const TYPE_LABELS: Record<EntryType, string> = { characters: 'Characters', sentences: 'Sentences' };
 
 interface Props {
   groups: TagGroup[];
   selected: string[];
   match: MatchMode;
+  types: EntryType[];
+  /** How many entries of each type pass the tag filter. */
+  typeCounts: Record<EntryType, number>;
   matched: number;
   total: number;
   open: boolean;
+  onToggleType: (t: EntryType) => void;
   onToggleTag: (tag: string) => void;
   onMatch: (m: MatchMode) => void;
   onClear: () => void;
@@ -18,7 +25,7 @@ interface Props {
  * Phone: bottom sheet. Tablet and desktop: side panel. Collapsible everywhere via `open`
  * (the parent starts it open on desktop and closed on smaller screens).
  */
-export function FilterPanel({ groups, selected, match, matched, total, open, onToggleTag, onMatch, onClear, onClose }: Props) {
+export function FilterPanel({ groups, selected, match, matched, total, open, types, typeCounts, onToggleType, onToggleTag, onMatch, onClear, onClose }: Props) {
   const headingRef = useRef<HTMLHeadingElement>(null);
   const wasOpen = useRef(open);
   useEffect(() => {
@@ -53,6 +60,21 @@ export function FilterPanel({ groups, selected, match, matched, total, open, onT
             Done
           </button>
         </div>
+      </div>
+
+      <div className="seg" role="group" aria-label="Show">
+        {ENTRY_TYPES.map((t) => (
+          <button
+            key={t}
+            type="button"
+            aria-pressed={types.includes(t)}
+            // The last selected type can't be turned off: there would be nothing to show.
+            aria-disabled={types.length === 1 && types.includes(t)}
+            onClick={() => onToggleType(t)}
+          >
+            {TYPE_LABELS[t]} <span className="n">{typeCounts[t]}</span>
+          </button>
+        ))}
       </div>
 
       <div className="seg" role="group" aria-label="How to combine tags">

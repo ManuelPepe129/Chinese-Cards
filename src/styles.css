@@ -122,7 +122,7 @@ code { font-size: 0.92em; }
 
 .topbar-right { display: flex; align-items: center; gap: 12px; }
 .modes {
-  order: 3; flex: 1 1 100%; display: grid; grid-template-columns: repeat(3, 1fr);
+  order: 3; flex: 1 1 100%; display: grid; grid-template-columns: repeat(2, 1fr);
   border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--card);
 }
 .modes button { min-height: 44px; border: 0; background: transparent; color: inherit; font: inherit; cursor: pointer; }
@@ -131,7 +131,7 @@ code { font-size: 0.92em; }
 @media (min-width: 900px) {
   .topbar h1, .topbar-right { flex: 1 1 0; }
   .topbar-right { justify-content: flex-end; }
-  .modes { order: 0; flex: 0 0 auto; min-width: 360px; }
+  .modes { order: 0; flex: 0 0 auto; min-width: 280px; }
 }
 .layout { flex: 1; min-height: 0; display: flex; }
 .study { flex: 1; min-width: 0; min-height: 0; display: flex; flex-direction: column; }
@@ -161,6 +161,8 @@ code { font-size: 0.92em; }
 .seg { display: grid; grid-template-columns: 1fr 1fr; margin-top: 14px; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
 .seg button { min-height: 44px; border: 0; background: transparent; color: inherit; font: inherit; cursor: pointer; }
 .seg button[aria-pressed='true'] { background: var(--accent); color: var(--accent-ink); }
+.seg + .seg { margin-top: 10px; }
+.seg .n { margin-left: 4px; font-size: 0.8rem; opacity: 0.8; font-variant-numeric: tabular-nums; }
 .seg button:focus-visible { outline-offset: -3px; }
 .help { margin: 8px 0 0; color: var(--muted); font-size: 0.9rem; }
 .tag-group h3 { margin: 18px 0 8px; font-size: 0.9rem; font-weight: 600; color: var(--muted); }

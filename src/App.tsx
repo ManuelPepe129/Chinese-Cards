@@ -8,6 +8,7 @@ import { ModeNav } from './components/ModeNav';
 import { NoMatches } from './components/NoMatches';
 import { DEFAULT_OPTIONS, StudyView, type StudyOptions } from './components/StudyView';
 import { groupTags, matchEntries } from './filter/filter';
+import { ENTRY_TYPES, type EntryType } from './url/urlState';
 import { useUrlState } from './url/useUrlState';
 
 function Header({ center, right }: { center?: ReactNode; right?: ReactNode }) {
@@ -42,21 +43,31 @@ function Workspace({ data, issues }: { data: Dataset; issues: DataIssue[] }) {
     () => matchEntries(sentences, url.tags, url.match),
     [sentences, url.tags, url.match],
   );
+  const showChars = url.types.includes('characters');
+  const showSents = url.types.includes('sentences');
+  // What is shown after the type and tag filters.
+  const shownChars = useMemo(() => (showChars ? filteredChars : []), [showChars, filteredChars]);
+  const shownSents = useMemo(() => (showSents ? filteredSents : []), [showSents, filteredSents]);
+  const studyEntries = useMemo(() => [...shownChars, ...shownSents], [shownChars, shownSents]);
+  const sentenceEntries = useMemo(() => new Set(sentences), [sentences]);
 
-  // What the active mode shows (before the tag filter), for chip counts and the "x of y" total.
+  // What the type filter lets through (before the tag filter), for chip counts and the "x of y" total.
   const scope = useMemo(
-    () => (url.mode === 'cards' ? characters : url.mode === 'sentences' ? sentences : [...characters, ...sentences]),
-    [url.mode, characters, sentences],
+    () => [...(showChars ? characters : []), ...(showSents ? sentences : [])],
+    [showChars, showSents, characters, sentences],
   );
   const universe = useMemo(() => [...characters, ...sentences], [characters, sentences]);
   const groups = useMemo(() => groupTags(scope, url.tags, universe), [scope, url.tags, universe]);
-  const matchedCount =
-    url.mode === 'cards'
-      ? filteredChars.length
-      : url.mode === 'sentences'
-        ? filteredSents.length
-        : filteredChars.length + filteredSents.length;
+  const matchedCount = studyEntries.length;
+  const typeCounts = { characters: filteredChars.length, sentences: filteredSents.length };
 
+  const toggleType = useCallback(
+    (t: EntryType) => {
+      const next = url.types.includes(t) ? url.types.filter((x) => x !== t) : [...url.types, t];
+      if (next.length > 0) updateUrl({ types: ENTRY_TYPES.filter((x) => next.includes(x)) }); // never none
+    },
+    [url.types, updateUrl],
+  );
   const toggleTag = useCallback(
     (tag: string) =>
       updateUrl({ tags: url.tags.includes(tag) ? url.tags.filter((t) => t !== tag) : [...url.tags, tag] }),
@@ -103,20 +114,23 @@ function Workspace({ data, issues }: { data: Dataset; issues: DataIssue[] }) {
           groups={groups}
           selected={url.tags}
           match={url.match}
+          types={url.types}
+          typeCounts={typeCounts}
           matched={matchedCount}
           total={scope.length}
           open={filtersOpen}
+          onToggleType={toggleType}
           onToggleTag={toggleTag}
           onMatch={(match) => updateUrl({ match })}
           onClear={clear}
           onClose={closeFilters}
         />
         {url.mode === 'browse' ? (
-          <BrowseView characters={filteredChars} sentences={filteredSents} filterEmpty={empty} />
+          <BrowseView characters={shownChars} sentences={shownSents} filterEmpty={empty} />
         ) : (
           <StudyView
-            kind={url.mode === 'cards' ? 'characters' : 'sentences'}
-            entries={url.mode === 'cards' ? filteredChars : filteredSents}
+            entries={studyEntries}
+            sentenceEntries={sentenceEntries}
             options={options}
             onOptionsChange={patchOptions}
             empty={empty}

@@ -19,7 +19,8 @@ export const DEFAULT_OPTIONS: StudyOptions = { shuffle: true, reverse: false, sh
 
 interface Props {
   entries: Entry[];
-  kind: 'characters' | 'sentences';
+  /** Entries that are sentences (the rest are single characters or words). Only they get "Pinyin on front". */
+  sentenceEntries?: ReadonlySet<Entry>;
   /** Lifted to the parent so the toggles survive switching to Browse and back. */
   options: StudyOptions;
   onOptionsChange: (patch: Partial<StudyOptions>) => void;
@@ -27,7 +28,9 @@ interface Props {
 }
 
 const SWIPE_MIN_PX = 50;
-export function StudyView({ entries, kind, options, onOptionsChange, empty }: Props) {
+const NO_SENTENCES: ReadonlySet<Entry> = new Set();
+
+export function StudyView({ entries, sentenceEntries = NO_SENTENCES, options, onOptionsChange, empty }: Props) {
   const { shuffle, reverse, showPinyin } = options;
   const [round, setRound] = useState(0); // bumped to reshuffle after a full pass
   const [pos, setPos] = useState(0);
@@ -39,6 +42,7 @@ export function StudyView({ entries, kind, options, onOptionsChange, empty }: Pr
     [entries, shuffle, round],
   );
   const n = order.length;
+  const hasSentences = entries.some((e) => sentenceEntries.has(e));
 
   const step = useCallback(
     (delta: 1 | -1) => {
@@ -65,7 +69,7 @@ export function StudyView({ entries, kind, options, onOptionsChange, empty }: Pr
   const hanziVisible = reverse ? flipped : !flipped;
 
   // Moving to another card (or toggling Italian-first) silences the previous one.
-  const cardKey = `${kind}-${round}-${Math.min(pos, Math.max(n - 1, 0))}-${reverse}`;
+  const cardKey = `${current?.hanzi}-${round}-${Math.min(pos, Math.max(n - 1, 0))}-${reverse}`;
   useEffect(() => {
     stopSpeech();
   }, [cardKey, stopSpeech]);
@@ -143,7 +147,7 @@ export function StudyView({ entries, kind, options, onOptionsChange, empty }: Pr
       <div className="study">
         {empty ?? (
           <p className="message">
-            No {kind} yet. Add entries to <code>public/data/data.json</code>.
+            No cards yet. Add entries to <code>public/data/data.json</code>.
           </p>
         )}
       </div>
@@ -164,11 +168,11 @@ export function StudyView({ entries, kind, options, onOptionsChange, empty }: Pr
         <div className="flip" ref={flipEl}>
           {/* key remounts the card on navigation so the next card never shows its back mid-flip */}
           <Flashcard
-            key={`${kind}-${round}-${safePos}-${reverse}`}
+            key={`${entry.hanzi}-${round}-${safePos}-${reverse}`}
             entry={entry}
             flipped={flipped}
             reverse={reverse}
-            showPinyin={showPinyin && !reverse}
+            showPinyin={showPinyin && !reverse && sentenceEntries.has(entry)}
             area={box}
             strokesRef={strokesRef}
             onPlayingChange={setStrokesPlaying}
@@ -230,7 +234,7 @@ export function StudyView({ entries, kind, options, onOptionsChange, empty }: Pr
           >
             Italian first
           </button>
-          {kind === 'sentences' && (
+          {hasSentences && (
             <button
               type="button"
               className="btn"
