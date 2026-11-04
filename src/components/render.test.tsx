@@ -4,6 +4,7 @@ import { groupTags } from '../filter/filter';
 import { FilterPanel } from './FilterPanel';
 import { BrowseView } from './BrowseView';
 import { SpeakButton } from './SpeakButton';
+import { StrokeButton } from './StrokeButton';
 import { DEFAULT_OPTIONS, StudyView } from './StudyView';
 
 const entry = (hanzi: string, ...tags: string[]) => ({ hanzi, pinyin: 'x', italian: ['y'], tags });
@@ -81,5 +82,20 @@ describe('SpeakButton', () => {
       <StudyView kind="characters" options={DEFAULT_OPTIONS} onOptionsChange={noop} entries={[entry('你')]} />,
     );
     expect(html).not.toContain('class="speak"');
+  });
+});
+
+describe('StrokeButton', () => {
+  it('offers to show the stroke order, and to stop it while playing', () => {
+    expect(renderToString(<StrokeButton playing={false} onPlay={noop} onStop={noop} />)).toContain('Show stroke order');
+    const playing = renderToString(<StrokeButton playing onPlay={noop} onStop={noop} />);
+    expect(playing).toContain('Stop stroke order');
+    expect(playing).toContain('data-playing="true"');
+  });
+});
+
+describe('study defaults', () => {
+  it('shuffles from the start, so the app does not always open on the same card', () => {
+    expect(DEFAULT_OPTIONS.shuffle).toBe(true);
   });
 });

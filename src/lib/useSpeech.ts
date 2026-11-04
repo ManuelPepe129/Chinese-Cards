@@ -1,7 +1,11 @@
 import { useCallback, useEffect, useState } from 'react';
 import { isSpeechSupported, pickChineseVoice, speakChinese, stopSpeaking } from './speech';
 
-/** Text-to-speech with a Mandarin voice. `available` is false when the device has none. */
+/**
+ * Text-to-speech with a Mandarin voice. `available` only means the browser supports speech: mobile
+ * browsers often list their voices late or not at all, so the button must not depend on finding one.
+ * Without a listed voice the utterance is tagged zh-CN and a failure shows the button's warning state.
+ */
 export function useSpeech() {
   const [voice, setVoice] = useState<SpeechSynthesisVoice | null>(null);
   const [speaking, setSpeaking] = useState(false);
@@ -30,10 +34,10 @@ export function useSpeech() {
 
   const speak = useCallback(
     (text: string) => {
-      if (!voice) return;
+      if (!isSpeechSupported()) return;
       setFailed(false);
       setSpeaking(true);
-      speakChinese(text, voice, {
+      speakChinese(text, voice ?? pickChineseVoice(window.speechSynthesis.getVoices()), {
         onEnd: () => setSpeaking(false),
         onError: (error) => {
           setSpeaking(false);
@@ -50,5 +54,5 @@ export function useSpeech() {
     setSpeaking(false);
   }, []);
 
-  return { available: voice !== null, speaking, failed, speak, stop };
+  return { available: isSpeechSupported(), speaking, failed, speak, stop };
 }

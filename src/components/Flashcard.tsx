@@ -1,6 +1,6 @@
-import type { CSSProperties } from 'react';
+import type { Ref } from 'react';
 import type { Entry } from '../data/schema';
-import { BrushText } from './BrushText';
+import { HanziStrokes, type StrokesHandle } from './HanziStrokes';
 
 interface Props {
   entry: Entry;
@@ -8,27 +8,23 @@ interface Props {
   reverse: boolean;
   /** Show pinyin under the hanzi on the front (ignored in reverse mode). */
   showPinyin?: boolean;
-  /** Room the stroke-order panel needs on the back: at the bottom, or on the right for short cards. */
-  reserve?: { side: boolean; size: number };
+  /** Size of the card, used to scale the drawn hanzi. */
+  area: { w: number; h: number };
+  strokesRef?: Ref<StrokesHandle>;
+  onPlayingChange?: (playing: boolean) => void;
   onFlip: () => void;
 }
 
-/**
- * Hanzi on a practice-paper guide (田字格) when it is a single character.
- * Longer text is sized for at most 6 characters per line and wraps after that.
- */
-function Hanzi({ text }: { text: string }) {
-  const n = Math.max(1, [...text].length);
+/** Hanzi drawn from stroke data, at most 6 per line. Single characters get a bigger practice-paper square. */
+function Hanzi({ text, area, strokesRef, onPlayingChange }: { text: string; area: Props['area']; strokesRef?: Ref<StrokesHandle>; onPlayingChange?: (p: boolean) => void }) {
   return (
-    <span className="glyph" data-single={n === 1} style={{ '--n': Math.min(n, 6) } as CSSProperties}>
-      {n === 1 && (
-        <svg className="guide" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-          <rect x="0" y="0" width="100" height="100" />
-          <path d="M50 0V100M0 50H100M0 0L100 100M100 0L0 100" />
-        </svg>
-      )}
-      <BrushText text={text} />
-    </span>
+    <HanziStrokes
+      text={text}
+      ref={strokesRef}
+      onPlayingChange={onPlayingChange}
+      area={{ w: area.w - 48, h: area.h * 0.45 }}
+      maxCell={area.w >= 600 ? 340 : 260}
+    />
   );
 }
 
@@ -48,8 +44,8 @@ function Meanings({ italian }: { italian: string[] }) {
   );
 }
 
-export function Flashcard({ entry, flipped, reverse, showPinyin = false, reserve, onFlip }: Props) {
-  const backStyle = reserve ? (reserve.side ? { paddingRight: reserve.size + 24 } : { paddingBottom: reserve.size + 22 }) : undefined;
+export function Flashcard({ entry, flipped, reverse, showPinyin = false, area, strokesRef, onPlayingChange, onFlip }: Props) {
+  const hanzi = <Hanzi text={entry.hanzi} area={area} strokesRef={strokesRef} onPlayingChange={onPlayingChange} />;
   return (
     <button type="button" className="card" data-card data-flipped={flipped} onClick={onFlip}>
       <span className="face front" aria-hidden={flipped}>
@@ -57,7 +53,7 @@ export function Flashcard({ entry, flipped, reverse, showPinyin = false, reserve
           <Meanings italian={entry.italian} />
         ) : (
           <>
-            <Hanzi text={entry.hanzi} />
+            {hanzi}
             {showPinyin && (
               <span className="front-pinyin" lang="zh-Latn-pinyin">
                 {entry.pinyin}
@@ -67,8 +63,8 @@ export function Flashcard({ entry, flipped, reverse, showPinyin = false, reserve
         )}
         <span className="hint">Tap to flip</span>
       </span>
-      <span className="face back" aria-hidden={!flipped} data-reserve={reserve ? (reserve.side ? 'side' : 'bottom') : undefined} style={backStyle}>
-        {reverse && <Hanzi text={entry.hanzi} />}
+      <span className="face back" aria-hidden={!flipped}>
+        {reverse && hanzi}
         <span className="pinyin" lang="zh-Latn-pinyin">
           {entry.pinyin}
         </span>

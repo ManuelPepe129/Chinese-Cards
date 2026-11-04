@@ -1,6 +1,8 @@
+export const isHan = (c: string) => /\p{Script=Han}/u.test(c);
+
 /** Han characters in `text` (punctuation, Latin letters and digits are dropped). */
 export function hanChars(text: string): string[] {
-  return [...text].filter((c) => /\p{Script=Han}/u.test(c));
+  return [...text].filter(isHan);
 }
 
 /** Unique Han characters across many strings, in first-seen order. */

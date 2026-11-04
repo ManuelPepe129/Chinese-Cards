@@ -17,6 +17,8 @@ export function pickChineseVoice<T extends VoiceLike>(voices: readonly T[]): T |
     (l) => l.startsWith('zh-hans') || l.startsWith('cmn-hans'),
     (l) => l === 'zh' || l === 'cmn',
     (l) => l === 'zh-tw' || l === 'cmn-tw' || l.startsWith('zh-hant-tw'),
+    // Any other Chinese tag some mobile engines use (e.g. "zh-Hans-CN-x-..."), still never Cantonese.
+    (l) => (l.startsWith('zh') || l.startsWith('cmn')) && !/(^|-)(hk|yue|mo)(-|$)/.test(l),
   ];
   for (const inTier of tiers) {
     const matches = voices.filter((v) => inTier(norm(v.lang)));
@@ -38,12 +40,13 @@ export interface SpeakHandlers {
 // utterance and then never fire `end`. Events from older, interrupted utterances are ignored.
 let current: SpeechSynthesisUtterance | null = null;
 
-export function speakChinese(text: string, voice: SpeechSynthesisVoice, handlers: SpeakHandlers = {}): void {
+/** With no `voice` the utterance is only tagged zh-CN and the engine picks its own default voice. */
+export function speakChinese(text: string, voice: SpeechSynthesisVoice | null, handlers: SpeakHandlers = {}): void {
   const synth = window.speechSynthesis;
   synth.cancel();
   const u = new SpeechSynthesisUtterance(text);
-  u.voice = voice;
-  u.lang = voice.lang;
+  if (voice) u.voice = voice;
+  u.lang = voice?.lang ?? 'zh-CN';
   u.rate = 0.85; // a little slower than natural speech, for learners
   u.onend = () => {
     if (current !== u) return;

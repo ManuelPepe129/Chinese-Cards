@@ -16,6 +16,10 @@ describe('pickChineseVoice', () => {
     expect(pickChineseVoice([v('zh-TW'), v('zh', 'bare')])?.name).toBe('bare');
     expect(pickChineseVoice([v('zh-TW', 'tw')])?.name).toBe('tw');
   });
+  it('accepts other Chinese tags as a last resort, but never Cantonese', () => {
+    expect(pickChineseVoice([v('zh-Hant-CN', 'odd')])?.name).toBe('odd');
+    expect(pickChineseVoice([v('zh-Hant-HK'), v('zh-MO')])).toBeNull();
+  });
   it('never picks Cantonese', () => {
     expect(pickChineseVoice([v('zh-HK'), v('yue-HK')])).toBeNull();
   });
@@ -52,6 +56,12 @@ describe('speakChinese / stopSpeaking', () => {
     speakChinese('你好', voice);
     expect(synth.cancel).toHaveBeenCalledBefore(synth.speak);
     expect(spoken[0]).toMatchObject({ text: '你好', voice, lang: 'zh-CN', rate: 0.85 });
+  });
+  it('still speaks, tagged zh-CN, when no voice was listed (common on mobile)', () => {
+    const { spoken } = setup();
+    speakChinese('你好', null);
+    expect(spoken[0]).toMatchObject({ text: '你好', lang: 'zh-CN' });
+    expect(spoken[0].voice).toBeUndefined();
   });
   it('reports end and error for the current utterance only', () => {
     const { spoken } = setup();

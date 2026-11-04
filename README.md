@@ -62,7 +62,7 @@ Italian and tags, and needs every word to match. The tag filter applies in Brows
 | Mouse | click the card | Previous / Next buttons |
 | Keyboard | Space | ← / → |
 
-"Shuffle" randomises the order (reshuffled after each full pass). "Italian first" shows the Italian on the front.
+"Shuffle" is on by default, so the app opens on a random card; it randomises the order (reshuffled after each full pass) and can be turned off for the original order. "Italian first" shows the Italian on the front.
 
 ## Tag filters and URL state
 
@@ -114,7 +114,7 @@ Tap it again while it plays to stop; moving to another card or leaving the mode 
 In *Italian first* mode the button only appears once the card is flipped, so it doesn't give the answer away.
 
 The speech comes from voices installed on **your device**, so nothing is downloaded by the app and it works in the installed PWA.
-If the device has no Mandarin voice (or the browser has no speech support) the button is simply not shown. Cantonese voices are
+The button is shown whenever the browser supports speech, even if it lists no Mandarin voice (mobile browsers often list voices late or not at all): it then asks the engine for zh-CN and the button shows its warning state if that fails. Cantonese voices are
 never used. To get a voice: iOS/iPadOS *Settings → Accessibility → Spoken Content → Voices → Chinese*; Android *Settings → System →
 Languages → Text-to-speech output* (Google TTS, Chinese data); Windows *Settings → Time & language → Speech → Add voices*;
 macOS *System Settings → Accessibility → Spoken Content → System voice → Manage voices*.
@@ -123,18 +123,11 @@ button shows a warning state and a tap retries. The pronunciation of characters 
 
 ## Stroke order
 
-Flip a card and the **stroke-order panel** appears at the bottom of its back (one drawing area per character, so a word like
-学生 gets two). It plays the animation by itself once, then offers:
-
-- **Replay**: watch it again.
-- **Quiz**: the character is hidden behind its outline and you draw each stroke with a finger, pen or mouse. Correct strokes
-  stay; a wrong one says "Not quite, try again" and, after a few misses, a hint appears. A word is quizzed one character after
-  another, and the status line tells you which stroke you are on. **Stop quiz** ends it.
-
-Details: at most 8 characters are drawn (longer sentences show the first 8 with a note); punctuation and non-Han characters are
-skipped; a character without stroke data gets a one-line notice and the rest still work. With *reduced motion* enabled in the
-system the finished character is shown instead of auto-playing. On a phone in landscape the buttons sit beside the drawing.
-Drawing needs a pointer or touch screen; Replay works from the keyboard. Drawing never flips the card or counts as a swipe.
+The hanzi on a card is drawn from the stroke data, one drawing area per character (a single character sits on a practice-paper
+guide). Tap the **play button** at the top left of the card to watch it written stroke by stroke, in order; tap it again to stop.
+In *Italian first* mode the drawing, and the play button, are on the back. Flipping the card or moving to another one stops the
+animation. Punctuation and characters without stroke data are shown as plain text, and the play button is hidden when none of the
+characters has stroke data. The button is separate from the card, so it never flips it.
 
 How it works offline: `npm run dev` / `npm run build` first run `scripts/build-strokes.ts`, which copies the
 [hanzi-writer-data](https://github.com/chanind/hanzi-writer-data) files for **only the characters used in `data.json`** into
@@ -217,5 +210,5 @@ sample-data/     sample.csv
 src/filter/      AND/OR matching, tag grouping, search (pure)
 src/url/         query-string state (parse/serialize + hook)
 src/lib/         pure helpers and hooks (shuffle, speech, stroke data/layout, writer wrapper)
-src/components/  Flashcard, SpeakButton, StrokePanel, StudyView, BrowseView, FilterPanel, ModeNav, NoMatches, DataIssues
+src/components/  Flashcard, HanziStrokes, SpeakButton, StrokeButton, StudyView, BrowseView, FilterPanel, ModeNav, NoMatches, DataIssues
 ```

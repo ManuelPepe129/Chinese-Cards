@@ -1,20 +1,21 @@
-import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import type { Entry } from '../data/schema';
 import { shuffledIndices } from '../lib/shuffle';
 import { hanChars } from '../lib/strokes';
-import { isSideLayout, layoutWriters, MAX_STROKE_CHARS, NOTICE_HEIGHT } from '../lib/strokeLayout';
 import { useElementSize } from '../lib/useElementSize';
 import { useStrokeAvailability } from '../lib/useStrokeAvailability';
 import { useSpeech } from '../lib/useSpeech';
 import { Flashcard } from './Flashcard';
+import type { StrokesHandle } from './HanziStrokes';
 import { SpeakButton } from './SpeakButton';
+import { StrokeButton } from './StrokeButton';
 
 export interface StudyOptions {
   shuffle: boolean;
   reverse: boolean;
   showPinyin: boolean;
 }
-export const DEFAULT_OPTIONS: StudyOptions = { shuffle: false, reverse: false, showPinyin: false };
+export const DEFAULT_OPTIONS: StudyOptions = { shuffle: true, reverse: false, showPinyin: false };
 
 interface Props {
   entries: Entry[];
@@ -26,10 +27,6 @@ interface Props {
 }
 
 const SWIPE_MIN_PX = 50;
-// hanzi-writer is a separate chunk, loaded on the first flip (and precached by the service worker).
-const loadStrokePanel = () => import('./StrokePanel');
-const StrokePanel = lazy(loadStrokePanel);
-
 export function StudyView({ entries, kind, options, onOptionsChange, empty }: Props) {
   const { shuffle, reverse, showPinyin } = options;
   const [round, setRound] = useState(0); // bumped to reshuffle after a full pass
@@ -56,36 +53,25 @@ export function StudyView({ entries, kind, options, onOptionsChange, empty }: Pr
 
   const speech = useSpeech();
   const stopSpeech = speech.stop;
-  // Stroke order: one writer per Han character (up to a limit). Data is prefetched with the card, so
-  // the back knows how much room to reserve before it is flipped.
+  // Stroke order is drawn in place of the hanzi; the play button replays it.
   const [flipEl, box] = useElementSize<HTMLDivElement>();
+  const strokesRef = useRef<StrokesHandle>(null);
+  const [strokesPlaying, setStrokesPlaying] = useState(false);
   const current: Entry | undefined = n > 0 ? entries[order[Math.min(pos, n - 1)]] : undefined;
   const han = hanChars(current?.hanzi ?? '');
-  const strokeChars = han.slice(0, MAX_STROKE_CHARS);
-  const strokeStatus = useStrokeAvailability(strokeChars);
-  const shown = strokeChars.filter((c) => strokeStatus(c) !== 'missing');
-  const missing = [...new Set(strokeChars.filter((c) => strokeStatus(c) === 'missing'))];
-  const side = isSideLayout(box);
-  const strokeLayout = useMemo(
-    () => (shown.length > 0 && box.w > 0 ? layoutWriters({ count: shown.length, width: box.w - 24, height: box.h, side }) : null),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [shown.length, box.w, box.h, side],
-  );
-  const reserve =
-    strokeChars.length === 0 || box.w === 0
-      ? undefined
-      : strokeLayout
-        ? { side, size: side ? strokeLayout.panelWidth : strokeLayout.panelHeight }
-        : { side: false, size: NOTICE_HEIGHT };
-  useEffect(() => {
-    void loadStrokePanel(); // warm the chunk so the first flip is instant (and cached for offline)
-  }, []);
+  const strokeStatus = useStrokeAvailability(han);
+  const canPlayStrokes = han.some((c) => strokeStatus(c) !== 'missing');
+  // The hanzi is on the front, or on the back in Italian-first mode.
+  const hanziVisible = reverse ? flipped : !flipped;
 
   // Moving to another card (or toggling Italian-first) silences the previous one.
   const cardKey = `${kind}-${round}-${Math.min(pos, Math.max(n - 1, 0))}-${reverse}`;
   useEffect(() => {
     stopSpeech();
   }, [cardKey, stopSpeech]);
+  useEffect(() => {
+    strokesRef.current?.stop(); // flipping away from the hanzi ends the animation
+  }, [flipped]);
 
   // A different card set (filter or mode changed) starts again from the first card.
   useEffect(() => {
@@ -131,9 +117,7 @@ export function StudyView({ entries, kind, options, onOptionsChange, empty }: Pr
   const swiped = useRef(false);
   const onPointerDown = (e: React.PointerEvent) => {
     swiped.current = false;
-    // Drawing in the stroke-order quiz must never count as a swipe to the next card.
-    const drawing = (e.target as Element).closest?.('[data-no-swipe]');
-    swipeStart.current = e.pointerType === 'mouse' || drawing ? null : { x: e.clientX, y: e.clientY };
+    swipeStart.current = e.pointerType === 'mouse' ? null : { x: e.clientX, y: e.clientY };
   };
   const onPointerUp = (e: React.PointerEvent) => {
     const s = swipeStart.current;
@@ -185,7 +169,9 @@ export function StudyView({ entries, kind, options, onOptionsChange, empty }: Pr
             flipped={flipped}
             reverse={reverse}
             showPinyin={showPinyin && !reverse}
-            reserve={reserve}
+            area={box}
+            strokesRef={strokesRef}
+            onPlayingChange={setStrokesPlaying}
             onFlip={onFlipClick}
           />
           {/* In Italian-first mode the front hides the hanzi, so don't give the answer away by speaking it. */}
@@ -198,17 +184,12 @@ export function StudyView({ entries, kind, options, onOptionsChange, empty }: Pr
               onStop={speech.stop}
             />
           )}
-          {flipped && strokeChars.length > 0 && box.w > 0 && (
-            <Suspense fallback={null}>
-              <StrokePanel
-                key={cardKey}
-                chars={shown}
-                missing={missing}
-                truncated={han.length > MAX_STROKE_CHARS}
-                layout={strokeLayout}
-                side={side}
-              />
-            </Suspense>
+          {hanziVisible && canPlayStrokes && (
+            <StrokeButton
+              playing={strokesPlaying}
+              onPlay={() => strokesRef.current?.play()}
+              onStop={() => strokesRef.current?.stop()}
+            />
           )}
         </div>
       </div>
