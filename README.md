@@ -1,9 +1,9 @@
 # Mandarin cards
 
 Static flashcard app for learning Mandarin (Italian translations, English UI).
-Vite + React + TypeScript, no backend, no stored progress.
+Vite + React + TypeScript, no backend. Only Review mode keeps progress, and it stays on the device (IndexedDB).
 
-**Status:** all milestones done — flashcards, sentences, browse, tag filters with URL state, installable offline PWA, CSV import, audio and stroke order.
+**Status:** all milestones done — flashcards, sentences, browse, tag filters with URL state, installable offline PWA, CSV import, audio, stroke order and a spaced-repetition Review mode.
 
 ## Run
 
@@ -48,6 +48,7 @@ maskable 512 and the iOS touch icon). To test the service worker locally use `np
 | Mode | What it does |
 | --- | --- |
 | Study | Flashcards for characters **and** sentences together (`mode=study`), with a "Pinyin on front" toggle that applies to every card. |
+| Review | Spaced repetition (`mode=review`): a daily queue of due cards plus up to 10 new ones, answered with Again / Hard / Good / Easy. Progress is saved on the device. See *Review mode* below. |
 | Browse | Searchable list of the characters and sentences with their tags (`mode=browse`). |
 
 The **Characters / Sentences** buttons at the top of the filter panel choose which kinds of card are shown, in both modes. Both are
@@ -56,6 +57,29 @@ on by default; at least one always stays on (`types=characters` or `types=senten
 
 Browse search ignores tone marks, accents and case (`ni`, `nǐ`, `nihao`, `perche` all work), matches hanzi, traditional, pinyin,
 Italian and tags, and needs every word to match. The tag filter applies in Browse too. The search text is not stored in the URL.
+
+## Review mode
+
+Study stays as it is (free browsing, no memory of what you knew). Review is the spaced-repetition mode: it remembers every card and decides when it comes back.
+
+- The front shows the hanzi (with the speaker and stroke-order buttons); flip it, then answer how well you remembered it.
+- The four buttons show when the card would return after each answer:
+
+| Button | Meaning | Effect |
+| --- | --- | --- |
+| Again | Forgot it | Back in 1 min (new card) or 10 min (card that lapsed); its interval restarts from 1 day |
+| Hard | Remembered with effort | Short step, or a small increase of the interval |
+| Good | Remembered | Next learning step (1 min, 10 min), then 1 day; afterwards the interval grows by the card's ease |
+| Easy | Remembered at once | A new card graduates to 4 days; later intervals grow the most |
+
+- Order: learning cards that are due, reviews due today, new cards (at most **10 new cards per day**), then learning cards due within 20 minutes. The header shows New / Learning / Due; the one the current card comes from is underlined.
+- The Characters / Sentences switch and the tag filters apply to Review too (the set you review is the filtered set); progress is kept per card, so changing the filter never loses it.
+- A study day starts at 04:00 local time, so a late-night session counts as the same day.
+- Keyboard: Space flips, then 1–4 answer (Space = Good). On touch, use the Show answer button or tap the card.
+
+Progress lives in the browser's IndexedDB on that device only: the phone and the computer keep separate progress, and clearing the site's data erases it (the app asks the browser to keep it, but export/import for backups is not built yet). If IndexedDB isn't available, Review still works but shows a notice that progress will be lost when the page closes.
+
+Settings (new cards per day, learning steps, intervals) are constants in `src/srs/scheduler.ts`. Each card has a stable key (`character:你:hanzi-italian`), so other directions can be added later without touching saved progress. Each answer is also appended to a review log in the database, for the planned statistics and mistakes mode.
 
 ## Controls
 
@@ -177,7 +201,7 @@ character,爱,ài,amare;amore,v.;lezione-4c
 sentence,明天见！,míngtiān jiàn!,A domani!,lezione-5c
 ```
 
-`sample-data/sample.csv` mirrors the current `data.json` (unit 1, lessons 1a–1d, with a `notes` column), so importing it into an
+`sample-data/sample.csv` mirrors the current `data.json` (units 1–2 up to lesson 2c, with a `notes` column), so importing it into an
 empty list rebuilds the data. The previous list is kept as `sample-data/data.OLD.json` and `sample-data/sample.OLD.csv`.
 
 | Column | Required | Notes |
@@ -215,5 +239,6 @@ sample-data/     sample.csv
 src/filter/      AND/OR matching, tag grouping, search (pure)
 src/url/         query-string state (parse/serialize + hook)
 src/lib/         pure helpers and hooks (shuffle, speech, stroke data/layout, writer wrapper)
-src/components/  Flashcard, HanziStrokes, SpeakButton, StrokeButton, StudyView, BrowseView, FilterPanel, ModeNav, NoMatches, DataIssues
+src/srs/         Review mode: scheduler, daily queue, card keys, IndexedDB store, session hook (scheduler/queue are pure)
+src/components/  Flashcard, HanziStrokes, SpeakButton, StrokeButton, StudyView, ReviewView, BrowseView, FilterPanel, ModeNav, NoMatches, DataIssues
 ```

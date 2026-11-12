@@ -19,6 +19,7 @@ describe('parseUrlState', () => {
   it('accepts every mode', () => {
     expect(parseUrlState('?mode=study').mode).toBe('study');
     expect(parseUrlState('?mode=browse').mode).toBe('browse');
+    expect(parseUrlState('?mode=review').mode).toBe('review');
   });
   it('shows characters and sentences together by default', () => {
     expect(parseUrlState('').types).toEqual(['characters', 'sentences']);

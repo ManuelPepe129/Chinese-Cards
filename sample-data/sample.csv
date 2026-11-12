@@ -37,7 +37,7 @@ character,大,dà,grande,agg.;lezione-1c,
 character,岁,suì,anno di età,sost.;lezione-1c,
 character,她,tā,ella;lei,pron. pers.;lezione-1c,
 character,几,jǐ,quanti?,pron. inter.;lezione-1c,
-character,有名,yǒumíng,famoso,agg.;lezione-1c,Compare anche nella lezione 2c.
+character,有名,yǒumíng,famoso,agg.;lezione-1c;lezione-2c,
 character,男孩儿,nánhár,bambino;ragazzo (maschio),sost.;lezione-1c,
 character,女的,nǚde,donna;signora,sost.;lezione-1c,
 character,〇,líng,zero,num.;lezione-1c,"[ToCheck] Non è nel glossario del libro: pinyin, traduzione, classe e lezione sono da verificare."
@@ -83,6 +83,110 @@ character,丈夫,zhàngfu,marito,sost.;lezione-1d,"[ToCheck] Non è nel glossari
 character,太太,tàitai,signora;moglie,sost.;lezione-1d,"[ToCheck] Non è nel glossario del libro: pinyin, traduzione, classe e lezione sono da verificare. Compare nella sezione «Informazioni personali» (lezioni 1b-1d): lezione incerta."
 character,女士,nǚshì,signora (formale),sost.;lezione-1d,"[ToCheck] Non è nel glossario del libro: pinyin, traduzione, classe e lezione sono da verificare. Compare nella sezione «Informazioni personali» (lezioni 1b-1d): lezione incerta."
 character,小姐,xiǎojie,signorina,sost.;lezione-1d,"[ToCheck] Non è nel glossario del libro: pinyin, traduzione, classe e lezione sono da verificare. Compare nella sezione «Informazioni personali» (lezioni 1b-1d): lezione incerta."
+character,护士,hùshi,infermiere;infermiera,lezione-1d,Dalla slide del 6 novembre (lezione 1d).
+character,工程师,gōngchéngshī,ingegnere,lezione-1d,Dalla slide del 6 novembre (lezione 1d).
+character,职员,zhíyuán,impiegato;impiegata,sost.;lezione-1d,Dalla slide del 6 novembre (lezione 1d). Nel glossario del libro: lezione 4d.
+character,老板,lǎobǎn,capo;titolare,lezione-1d,Dalla slide del 6 novembre (lezione 1d).
+character,警察,jǐngchá,poliziotto;poliziotta,lezione-1d,Dalla slide del 6 novembre (lezione 1d).
+character,服务员,fúwùyuán,cameriere;cameriera,sost.;lezione-1d,Dalla slide del 6 novembre (lezione 1d). Nel glossario del libro: lezione 4d.
+character,司机,sījī,autista,lezione-1d,Dalla slide del 6 novembre (lezione 1d).
+character,厨师,chúshī,cuoco;cuoca,lezione-1d,Dalla slide del 6 novembre (lezione 1d).
+character,工人,gōngrén,operaio;operaia,sost.;lezione-1d,Dalla slide del 6 novembre (lezione 1d). Nel glossario del libro: lezione 2d.
+character,律师,lǜshī,avvocato,lezione-1d,Dalla slide del 6 novembre (lezione 1d).
+character,退休,tuìxiū,in pensione,lezione-1d,Dalla slide del 6 novembre (lezione 1d).
+character,哪,nǎ,quale?,pron. inter.;lezione-2a,
+character,哪儿,nǎr,dove?,pron. inter.;lezione-2a,
+character,哪里,nǎlǐ,dove?,pron. inter.;lezione-2a,
+character,国,guó,paese;nazione,sost.;lezione-2a,
+character,人,rén,uomo;persona,sost.;lezione-2a,
+character,你们,nǐmen,voi;vi;ve,pron. pers.;lezione-2a,
+character,我们,wǒmen,noi;ci;ce,pron. pers.;lezione-2a,
+character,她们,tāmen,esse;loro,pron. pers.;lezione-2a,
+character,别的,biéde,altro,avv.;lezione-2a,
+character,外国,wàiguó,paesi esteri,sost.;lezione-2a,
+character,歌手,gēshǒu,cantante,sost.;lezione-2a,Compare anche nella lezione 3d.
+character,韩国,Hánguó,Corea del Sud,lezione-2a,
+character,瑞士,Ruìshì,Svizzera,lezione-2a,
+character,菲律宾,Fēilǜbīn,Filippine,lezione-2a,
+character,意大利,Yìdàlì,Italia,lezione-2a,
+character,中国,Zhōngguó,Cina,lezione-2a,
+character,法国,Fǎguó,Francia,lezione-2a,
+character,英国,Yīngguó,Inghilterra;Regno Unito,lezione-2a,
+character,德国,Déguó,Germania,lezione-2a,
+character,美国,Měiguó,Stati Uniti;USA,lezione-2a,
+character,日本,Rìběn,Giappone,lezione-2a,
+character,巴西,Bāxī,Brasile,lezione-2a,[ToCheck] Traduzione non riportata dal libro né dalle slide: aggiunta da me.
+character,奥地利,Àodìlì,Austria,lezione-2a,[ToCheck] Traduzione non riportata dal libro né dalle slide: aggiunta da me.
+character,澳大利亚,Àodàlìyà,Australia,lezione-2a,[ToCheck] Traduzione non riportata dal libro né dalle slide: aggiunta da me.
+character,肯尼亚,Kěnníyà,Kenya,lezione-2a,[ToCheck] Traduzione non riportata dal libro né dalle slide: aggiunta da me.
+character,加拿大,Jiānádà,Canada,lezione-2a,[ToCheck] Traduzione non riportata dal libro né dalle slide: aggiunta da me.
+character,西班牙,Xībānyá,Spagna,lezione-2a,[ToCheck] Traduzione non riportata dal libro né dalle slide: aggiunta da me.
+character,墨西哥,Mòxīgē,Messico,lezione-2a,[ToCheck] Traduzione non riportata dal libro né dalle slide: aggiunta da me.
+character,非洲,Fēizhōu,Africa,lezione-2a,
+character,美洲,Měizhōu,America,lezione-2a,
+character,亚洲,Yàzhōu,Asia,lezione-2a,
+character,欧洲,Ōuzhōu,Europa,lezione-2a,
+character,大洋洲,Dàyángzhōu,Oceania,lezione-2a,
+character,米兰,Mǐlán,Milano,lezione-2a,
+character,都灵,Dūlíng,Torino,lezione-2a,
+character,威尼斯,Wēinísī,Venezia,lezione-2a,
+character,佛罗伦萨,Fóluólúnsà,Firenze,lezione-2a,
+character,罗马,Luómǎ,Roma,lezione-2a,
+character,那不勒斯,Nàbùlèsī,Napoli,lezione-2a,
+character,西西里,Xīxīlǐ,Sicilia,lezione-2a,[ToCheck] Nella slide del 9 ottobre è indicato come «Palermo»: 西西里 è la Sicilia.
+character,热那亚,Rènàyà,Genova,lezione-2a,[ToCheck] Traduzione non riportata dal libro né dalle slide: aggiunta da me.
+character,重庆,Chóngqìng,Chongqing (città in Cina),lezione-2a,[ToCheck] Traduzione non riportata dal libro né dalle slide: aggiunta da me.
+character,来自,láizì,provenire da,lezione-2a,Dalla slide del 9 ottobre (lezione 2a): «come from». Es. 我来自都灵。
+character,住在,zhù zài,vivere a...,lezione-2b,
+character,在,zài,stare;trovarsi in un luogo;in (preposizione: introduce lo stato in luogo),v.;prep.;lezione-2b;lezione-2c,Verbo: 我在家 (sono a casa). Preposizione: 我在学校工作 (lavoro a scuola).
+character,去,qù,andare,v.;lezione-2b,Movimento in allontanamento da chi parla (我去学校).
+character,来,lái,venire,v.;lezione-2b,Movimento verso chi parla (你来我家).
+character,回,huí,tornare,v.;lezione-2b,
+character,家,jiā,casa;famiglia,sost.;lezione-2b,
+character,路,lù,via;strada,sost.;lezione-2b,
+character,喂,wèi,pronto! (al telefono),escl.;lezione-2b,
+character,吧,ba,"su!, dai! (invito);…vero? (domanda di cui si pensa di conoscere la risposta)",part. modale esort.;lezione-2b,"Es. 吃饭吧 (su, mangiamo); 你是老师吧？ (sei insegnante, vero?). Significati dalla slide dell'11 novembre."
+character,教室,jiàoshì,aula,sost.;lezione-2b,
+character,操场,cāochǎng,campo sportivo,sost.;lezione-2b,
+character,房子,fángzi,casa,sost.;lezione-2b,
+character,房间,fángjiān,stanza,sost.;lezione-2b,
+character,门口,ménkǒu,entrata,sost.;lezione-2b,
+character,地图,dìtú,mappa,sost.;lezione-2b,
+character,这里,zhèlǐ,qui,sost.;lezione-2b,
+character,室友,shìyǒu,coinquilino;compagno di stanza,sost.;lezione-2b,
+character,妻子,qīzi,moglie,sost.;lezione-2b,
+character,北京,Běijīng,Pechino (capitale della Repubblica Popolare Cinese),lezione-2b,
+character,上海,Shànghǎi,Shanghai (città in Cina),lezione-2b,
+character,南京,Nánjīng,Nanchino (città in Cina),lezione-2b,
+character,京,jīng,capitale,lezione-2b,"Es. 北京 «capitale del nord», 南京 «capitale del sud» (slide dell'11 novembre)."
+character,回国,huíguó,tornare nel proprio Paese,lezione-2b,Dalla slide dell'11 novembre.
+character,大街,dàjiē,corso (viale),lezione-2b,Dalla slide dell'11 novembre: REGINA大街 = Corso Regina.
+character,四合院,sìhéyuàn,cortile composto di quattro parti (casa tradizionale cinese),lezione-2b,
+character,筒子楼,tǒngzilóu,"palazzo a forma di tubo, con servizi condivisi (bagni e cucine)",lezione-2b,
+character,大路,dàlù,strada grande,lezione-2b,[ToCheck] Il libro non riporta il significato: «strada grande» è una mia ipotesi.
+character,第,dì,prefisso dei numeri ordinali,pref.;lezione-2c,"[ToCheck] Il glossario riporta solo «pref.»: la descrizione in italiano è mia, da verificare."
+character,第一,dì yī,primo,lezione-2c,
+character,第二,dì èr,secondo,lezione-2c,
+character,第三,dì sān,terzo,lezione-2c,
+character,学校,xuéxiào,scuola,sost.;lezione-2c,
+character,中学,zhōngxué,scuola media,sost.;lezione-2c,
+character,高中,gāozhōng,scuola secondaria superiore,sost.;lezione-2c,
+character,年级,niánjí,anno di corso,sost.;lezione-2c,
+character,上,shàng,frequentare (una scuola),v.;lezione-2c,
+character,上学,shàngxué,andare a scuola;frequentare la scuola,v. a ogg. interno;lezione-2c,Verbo separabile: 上//学.
+character,读书,dúshū,leggere;studiare,v.;lezione-2c,Verbo separabile: 读//书.
+character,工作,gōngzuò,lavorare;lavoro,v.;sost.;lezione-2c,
+character,做,zuò,fare,v.;lezione-2c,
+character,医生,yīshēng,medico,sost.;lezione-2c,
+character,医院,yīyuàn,ospedale,sost.;lezione-2c,
+character,教练,jiàoliàn,allenatore,sost.;lezione-2c,
+character,体育,tǐyù,sport,sost.;lezione-2c,Compare anche nella lezione 4d.
+character,图书馆,túshūguǎn,biblioteca,sost.;lezione-2c,
+character,上午,shàngwǔ,mattina,sost.;lezione-2c,
+character,下午,xiàwǔ,pomeriggio,sost.;lezione-2c,
+character,小学,xiǎoxué,scuola elementare,sost.;lezione-2c,Insegnata in classe l'11 novembre insieme alle scuole della 2c; nel glossario del libro è in lezione 4d.
+character,初中,chūzhōng,scuola secondaria inferiore;scuola media,sost.;lezione-2c,Insegnata in classe l'11 novembre insieme alle scuole della 2c; nel glossario del libro è in lezione 2d.
+character,大学,dàxué,università,sost.;lezione-2c,Insegnata in classe l'11 novembre insieme alle scuole della 2c; nel glossario del libro è in lezione 2d.
 sentence,你好吗？,Nǐ hǎo ma?,Come stai?,lezione-1a,
 sentence,我很好。你呢？,Wǒ hěn hǎo. Nǐ ne?,Sto molto bene. E tu?,lezione-1a,
 sentence,你好！我是马可。,Nǐ hǎo! Wǒ shì Mǎkě.,Ciao! Sono Marco.,lezione-1b,
@@ -114,3 +218,70 @@ sentence,这是一飞的爸爸。,Zhè shì Yīfēi de bàba.,Questo è il papà
 sentence,我是学生，他也是学生。,"Wǒ shì xuésheng, tā yě shì xuésheng.",Io sono studente e anche lui è studente.,lezione-1d,
 sentence,他们是一飞的爷爷和奶奶。,Tāmen shì Yīfēi de yéye hé nǎinai.,Loro sono il nonno e la nonna (paterni) di Yifei.,lezione-1d,
 sentence,这是一飞的爸爸，这是他妈妈。,"Zhè shì Yīfēi de bàba, zhè shì tā māma.","Questo è il papà di Yifei, questa è sua mamma.",lezione-1d,
+sentence,你们是哪国人？,Nǐmen shì nǎ guó rén?,Di che nazionalità siete?,lezione-2a,
+sentence,我们是意大利人。,Wǒmen shì Yìdàlì rén.,Siamo italiani.,lezione-2a,
+sentence,你是哪国人？,Nǐ shì nǎ guó rén?,Di che nazionalità sei?,lezione-2a,
+sentence,我是中国人。,Wǒ shì Zhōngguó rén.,Sono cinese.,lezione-2a,
+sentence,你是哪儿的人？,Nǐ shì nǎr de rén?,Di dove sei?,lezione-2a,
+sentence,她们是哪儿的人？,Tāmen shì nǎr de rén?,Di dove sono (loro)?,lezione-2a,
+sentence,她们是米兰人。,Tāmen shì Mǐlán rén.,Sono di Milano.,lezione-2a,
+sentence,她是罗马人，我是米兰人。,"Tā shì Luómǎ rén, wǒ shì Mǐlán rén.","Lei è di Roma, io sono di Milano.",lezione-2a,
+sentence,爱玛是罗马人，安娜是米兰人。,"Àimǎ shì Luómǎ rén, Ānnà shì Mǐlán rén.","Emma è di Roma, Anna è di Milano.",lezione-2a,
+sentence,我们都是意大利人。,Wǒmen dōu shì Yìdàlì rén.,Siamo tutti italiani.,lezione-2a,
+sentence,你们都是意大利人吗？,Nǐmen dōu shì Yìdàlì rén ma?,Siete tutti italiani?,lezione-2a,
+sentence,不是。我们不都是意大利人。,"Bú shì, wǒmen bù dōu shì Yìdàlì rén.",No. Non siamo tutti italiani.,lezione-2a,
+sentence,他们都是白老师的学生。,Tāmen dōu shì Bái lǎoshī de xuésheng.,Sono tutti studenti dell'insegnante Bai.,lezione-2a,
+sentence,他们都不是白老师的学生。,Tāmen dōu bú shì Bái lǎoshī de xuésheng.,Nessuno di loro è studente dell'insegnante Bai.,lezione-2a,
+sentence,他们不都是白老师的学生。,Tāmen bù dōu shì Bái lǎoshī de xuésheng.,Non tutti sono studenti dell'insegnante Bai.,lezione-2a,
+sentence,你是不是意大利人？,Nǐ shì bu shì Yìdàlì rén?,Sei italiano (o no)?,lezione-2a,
+sentence,你们是学生吗？,Nǐmen shì xuésheng ma?,Siete studenti?,lezione-2a,
+sentence,你们是不是学生？,Nǐmen shì bu shì xuésheng?,Siete studenti (o no)?,lezione-2a,
+sentence,请问，您是不是老师？,"Qǐngwèn, nín shì bu shì lǎoshī?","Mi scusi, Lei è insegnante (o no)?",lezione-2a,
+sentence,一飞是不是法国人？,Yīfēi shì bu shì Fǎguó rén?,Yifei è francese (o no)?,lezione-2a,
+sentence,马可是不是米兰人？,Mǎkě shì bu shì Mǐlán rén?,Marco è di Milano (o no)?,lezione-2a,
+sentence,张老师是不是意大利人？,Zhāng lǎoshī shì bu shì Yìdàlì rén?,L'insegnante Zhang è italiano (o no)?,lezione-2a,
+sentence,小云是中国人。,Xiǎoyún shì Zhōngguó rén.,Xiaoyun è cinese.,lezione-2a,
+sentence,她们是法国人。,Tāmen shì Fǎguó rén.,Sono francesi.,lezione-2a,
+sentence,您呢？您是不是米兰人？,Nín ne? Nín shì bu shì Mǐlán rén?,E Lei? È di Milano (o no)?,lezione-2a,
+sentence,不是。我是威尼斯人。,Bú shì. Wǒ shì Wēinísī rén.,No. Sono di Venezia.,lezione-2a,
+sentence,他不是意大利人，他是中国人。,"Tā bú shì Yìdàlì rén, tā shì Zhōngguó rén.","Non è italiano, è cinese.",lezione-2a,
+sentence,我来自都灵。,Wǒ láizì Dūlíng.,Vengo da Torino.,lezione-2a,
+sentence,别的人都是外国人。,Biéde rén dōu shì wàiguó rén.,Gli altri sono tutti stranieri.,lezione-2a,
+sentence,你住在哪儿？,Nǐ zhù zài nǎr?,Dove abiti?,lezione-2b,
+sentence,我住在北京。,Wǒ zhù zài Běijīng.,Abito a Pechino.,lezione-2b,
+sentence,我不住在北京，我住在上海。,"Wǒ bú zhù zài Běijīng, wǒ zhù zài Shànghǎi.","Non abito a Pechino, abito a Shanghai.",lezione-2b,
+sentence,我住在北京，你也住在北京吧？,"Wǒ zhù zài Běijīng, nǐ yě zhù zài Běijīng ba?","Io abito a Pechino, anche tu abiti a Pechino, vero?",lezione-2b,
+sentence,她住在南京路。,Tā zhù zài Nánjīng lù.,Abita in via Nanchino.,lezione-2b,
+sentence,你是意大利人吧？,Nǐ shì Yìdàlì rén ba?,"Sei italiano, vero?",lezione-2b,
+sentence,喂！你在哪儿？在教室吗？,Wèi! Nǐ zài nǎr? Zài jiàoshì ma?,Pronto! Dove sei? Sei in aula?,lezione-2b,
+sentence,不在。我在操场，你来吧！,"Bú zài. Wǒ zài cāochǎng, nǐ lái ba!","No. Sono nel campo sportivo, vieni!",lezione-2b,
+sentence,我不去，我回家。,"Wǒ bú qù, wǒ huí jiā.","Non vado, torno a casa.",lezione-2b,
+sentence,你来我家吧！,Nǐ lái wǒ jiā ba!,Vieni a casa mia!,lezione-2b,
+sentence,我去马可家。,Wǒ qù Mǎkě jiā.,Vado a casa di Marco.,lezione-2b,
+sentence,你去哪儿？,Nǐ qù nǎr?,Dove vai?,lezione-2b,
+sentence,我回家。,Wǒ huí jiā.,Torno a casa.,lezione-2b,
+sentence,我在米兰。,Wǒ zài Mǐlán.,Sono a Milano.,lezione-2b,
+sentence,他来米兰。,Tā lái Mǐlán.,Lui viene a Milano.,lezione-2b,
+sentence,你去罗马。,Nǐ qù Luómǎ.,Tu vai a Roma.,lezione-2b,
+sentence,我去学校。,Wǒ qù xuéxiào.,Vado a scuola.,lezione-2b,
+sentence,我去爷爷奶奶的家。,Wǒ qù yéye nǎinai de jiā.,Vado a casa dei nonni.,lezione-2b,
+sentence,我去老师的家。,Wǒ qù lǎoshī de jiā.,Vado a casa dell'insegnante.,lezione-2b,
+sentence,我在家。,Wǒ zài jiā.,Sono a casa.,lezione-2b,
+sentence,去学校吧！,Qù xuéxiào ba!,"Andiamo a scuola, forza!",lezione-2b,
+sentence,这是我的房间，房间不大。,"Zhè shì wǒ de fángjiān, fángjiān bú dà.","Questa è la mia stanza, la stanza non è grande.",lezione-2b,
+sentence,这是北京地图。,Zhè shì Běijīng dìtú.,Questa è la mappa di Pechino.,lezione-2b,
+sentence,你在哪儿上学？,Nǐ zài nǎr shàngxué?,Dove vai a scuola?,lezione-2c,
+sentence,我在第二中学上学。,Wǒ zài Dì'èr zhōngxué shàngxué.,Vado alla scuola media numero 2.,lezione-2c,
+sentence,你上几年级？,Nǐ shàng jǐ niánjí?,In che anno sei?,lezione-2c,
+sentence,我上高中二年级。,Wǒ shàng gāozhōng èr niánjí.,Faccio il secondo anno di scuola superiore.,lezione-2c,
+sentence,我上初中三年级。,Wǒ shàng chūzhōng sān niánjí.,Faccio la terza media.,lezione-2c,
+sentence,你爸爸在哪儿工作？,Nǐ bàba zài nǎr gōngzuò?,Dove lavora tuo padre?,lezione-2c,
+sentence,他是医生，在医院工作。,"Tā shì yīshēng, zài yīyuàn gōngzuò.",È medico e lavora in ospedale.,lezione-2c,
+sentence,你妈妈做什么工作？,Nǐ māma zuò shénme gōngzuò?,Che lavoro fa tua madre?,lezione-2c,
+sentence,我妈妈在学校工作，她是老师。,"Wǒ māma zài xuéxiào gōngzuò, tā shì lǎoshī.","Mia madre lavora a scuola, è insegnante.",lezione-2c,
+sentence,你在哪里工作？,Nǐ zài nǎli gōngzuò?,Dove lavori?,lezione-2c,
+sentence,我在学校工作。,Wǒ zài xuéxiào gōngzuò.,Lavoro a scuola.,lezione-2c,
+sentence,我在大学学习。,Wǒ zài dàxué xuéxí.,Studio all'università.,lezione-2c,
+sentence,他们在学校的图书馆工作。,Tāmen zài xuéxiào de túshūguǎn gōngzuò.,Lavorano nella biblioteca della scuola.,lezione-2c,
+sentence,他是学校的体育教练。,Tā shì xuéxiào de tǐyù jiàoliàn.,È l'allenatore di sport della scuola.,lezione-2c,
+sentence,他退休了。,Tā tuìxiū le.,È andato in pensione.,lezione-1d,

@@ -1,6 +1,6 @@
 import type { MatchMode } from '../filter/filter';
 
-export const MODES = ['study', 'browse'] as const;
+export const MODES = ['study', 'review', 'browse'] as const;
 export type Mode = (typeof MODES)[number];
 
 export const ENTRY_TYPES = ['characters', 'sentences'] as const;

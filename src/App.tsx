@@ -6,8 +6,10 @@ import { DataIssues } from './components/DataIssues';
 import { FilterPanel } from './components/FilterPanel';
 import { ModeNav } from './components/ModeNav';
 import { NoMatches } from './components/NoMatches';
+import { ReviewView, type ReviewItem } from './components/ReviewView';
 import { DEFAULT_OPTIONS, StudyView, type StudyOptions } from './components/StudyView';
 import { groupTags, matchEntries } from './filter/filter';
+import { cardKey } from './srs/keys';
 import { ENTRY_TYPES, type EntryType } from './url/urlState';
 import { useUrlState } from './url/useUrlState';
 
@@ -49,6 +51,14 @@ function Workspace({ data, issues }: { data: Dataset; issues: DataIssue[] }) {
   const shownChars = useMemo(() => (showChars ? filteredChars : []), [showChars, filteredChars]);
   const shownSents = useMemo(() => (showSents ? filteredSents : []), [showSents, filteredSents]);
   const studyEntries = useMemo(() => [...shownChars, ...shownSents], [shownChars, shownSents]);
+  // Review keeps progress per card, so each item carries its stable key.
+  const reviewItems = useMemo<ReviewItem[]>(
+    () => [
+      ...shownChars.map((entry) => ({ key: cardKey('character', entry.hanzi), entry })),
+      ...shownSents.map((entry) => ({ key: cardKey('sentence', entry.hanzi), entry })),
+    ],
+    [shownChars, shownSents],
+  );
 
   // What the type filter lets through (before the tag filter), for chip counts and the "x of y" total.
   const scope = useMemo(
@@ -126,6 +136,8 @@ function Workspace({ data, issues }: { data: Dataset; issues: DataIssue[] }) {
         />
         {url.mode === 'browse' ? (
           <BrowseView characters={shownChars} sentences={shownSents} filterEmpty={empty} />
+        ) : url.mode === 'review' ? (
+          <ReviewView items={reviewItems} empty={empty} />
         ) : (
           <StudyView
             entries={studyEntries}
