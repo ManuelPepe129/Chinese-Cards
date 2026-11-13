@@ -32,7 +32,7 @@ character,什么,shénme,che?,pron. inter.;lezione-1c,
 character,名字,míngzi,nome,sost.;lezione-1c,
 character,的,de,particella di determinazione/possesso (es. 你的名字),part.;lezione-1c,"[ToCheck] Il glossario riporta solo la classe grammaticale: la descrizione in italiano è mia, da verificare."
 character,对,duì,essere esatto,v.;lezione-1c,
-character,多,duō,quanto?,pron. inter.;lezione-1c,
+character,多,duō,quanto?,pron. inter.;lezione-1c;lezione-3d,
 character,大,dà,grande,agg.;lezione-1c,
 character,岁,suì,anno di età,sost.;lezione-1c,
 character,她,tā,ella;lei,pron. pers.;lezione-1c,
@@ -59,12 +59,12 @@ character,请,qǐng,prego,v.;lezione-1d,
 character,学生,xuésheng,studente,sost.;lezione-1d,
 character,大学生,dàxuéshēng,studente universitario,sost.;lezione-1d,
 character,中学生,zhōngxuésheng,studente di scuola secondaria,sost.;lezione-1d,
-character,先生,xiānsheng,signore,sost.;lezione-1d,
+character,先生,xiānsheng,signore,sost.;lezione-1b;lezione-1d,Nel glossario del libro: lezione 1d; compare già nel testo della lezione 1b (slide del 30 ottobre: 张先生，你好！).
 character,家人,jiārén,familiare;familiari,sost.;lezione-1d,
 character,今年,jīnnián,quest'anno,sost.;lezione-1d,
 character,这,zhè,questo;questa,pron. dimos.;lezione-1d,
 character,小,xiǎo,piccolo,agg.;lezione-1d,
-character,和,hé,e,cong.;lezione-1d,
+character,和,hé,e,cong.;lezione-1d;lezione-3d,
 character,也,yě,anche,avv.;lezione-1d,
 character,他们,tāmen,essi;loro,pron. pers.;lezione-1d,
 character,爸爸,bàba,papà;padre,sost.;lezione-1d,"[ToCheck] Non è nel glossario del libro: pinyin, traduzione, classe e lezione sono da verificare."
@@ -81,17 +81,17 @@ character,儿子,érzi,figlio,sost.;lezione-1d,"[ToCheck] Non è nel glossario d
 character,女儿,nǚ'ér,figlia,sost.;lezione-1d,"[ToCheck] Non è nel glossario del libro: pinyin, traduzione, classe e lezione sono da verificare."
 character,丈夫,zhàngfu,marito,sost.;lezione-1d,"[ToCheck] Non è nel glossario del libro: pinyin, traduzione, classe e lezione sono da verificare."
 character,太太,tàitai,signora;moglie,sost.;lezione-1d,"[ToCheck] Non è nel glossario del libro: pinyin, traduzione, classe e lezione sono da verificare. Compare nella sezione «Informazioni personali» (lezioni 1b-1d): lezione incerta."
-character,女士,nǚshì,signora (formale),sost.;lezione-1d,"[ToCheck] Non è nel glossario del libro: pinyin, traduzione, classe e lezione sono da verificare. Compare nella sezione «Informazioni personali» (lezioni 1b-1d): lezione incerta."
+character,女士,nǚshì,signora (formale),sost.;lezione-1b;lezione-1d,"[ToCheck] Non è nel glossario del libro: pinyin, traduzione e classe sono da verificare. Compare nel testo della lezione 1b (slide del 30 ottobre: 你好，白女士！) e nella sezione «Informazioni personali»."
 character,小姐,xiǎojie,signorina,sost.;lezione-1d,"[ToCheck] Non è nel glossario del libro: pinyin, traduzione, classe e lezione sono da verificare. Compare nella sezione «Informazioni personali» (lezioni 1b-1d): lezione incerta."
 character,护士,hùshi,infermiere;infermiera,lezione-1d,Dalla slide del 6 novembre (lezione 1d).
 character,工程师,gōngchéngshī,ingegnere,lezione-1d,Dalla slide del 6 novembre (lezione 1d).
-character,职员,zhíyuán,impiegato;impiegata,sost.;lezione-1d,Dalla slide del 6 novembre (lezione 1d). Nel glossario del libro: lezione 4d.
+character,职员,zhíyuán,impiegato;impiegata,sost.;lezione-1d;lezione-4d,Dalla slide del 6 novembre (lezione 1d). Nel glossario del libro: lezione 4d.
 character,老板,lǎobǎn,capo;titolare,lezione-1d,Dalla slide del 6 novembre (lezione 1d).
 character,警察,jǐngchá,poliziotto;poliziotta,lezione-1d,Dalla slide del 6 novembre (lezione 1d).
-character,服务员,fúwùyuán,cameriere;cameriera,sost.;lezione-1d,Dalla slide del 6 novembre (lezione 1d). Nel glossario del libro: lezione 4d.
+character,服务员,fúwùyuán,cameriere;cameriera,sost.;lezione-1d;lezione-4d,Dalla slide del 6 novembre (lezione 1d). Nel glossario del libro: lezione 4d.
 character,司机,sījī,autista,lezione-1d,Dalla slide del 6 novembre (lezione 1d).
 character,厨师,chúshī,cuoco;cuoca,lezione-1d,Dalla slide del 6 novembre (lezione 1d).
-character,工人,gōngrén,operaio;operaia,sost.;lezione-1d,Dalla slide del 6 novembre (lezione 1d). Nel glossario del libro: lezione 2d.
+character,工人,gōngrén,operaio;operaia,sost.;lezione-1d;lezione-2d,Dalla slide del 6 novembre (lezione 1d). Nel glossario del libro: lezione 2d.
 character,律师,lǜshī,avvocato,lezione-1d,Dalla slide del 6 novembre (lezione 1d).
 character,退休,tuìxiū,in pensione,lezione-1d,Dalla slide del 6 novembre (lezione 1d).
 character,哪,nǎ,quale?,pron. inter.;lezione-2a,
@@ -104,7 +104,7 @@ character,我们,wǒmen,noi;ci;ce,pron. pers.;lezione-2a,
 character,她们,tāmen,esse;loro,pron. pers.;lezione-2a,
 character,别的,biéde,altro,avv.;lezione-2a,
 character,外国,wàiguó,paesi esteri,sost.;lezione-2a,
-character,歌手,gēshǒu,cantante,sost.;lezione-2a,Compare anche nella lezione 3d.
+character,歌手,gēshǒu,cantante,sost.;lezione-2a;lezione-3d,Compare anche nella lezione 3d.
 character,韩国,Hánguó,Corea del Sud,lezione-2a,
 character,瑞士,Ruìshì,Svizzera,lezione-2a,
 character,菲律宾,Fēilǜbīn,Filippine,lezione-2a,
@@ -138,11 +138,11 @@ character,热那亚,Rènàyà,Genova,lezione-2a,[ToCheck] Traduzione non riporta
 character,重庆,Chóngqìng,Chongqing (città in Cina),lezione-2a,[ToCheck] Traduzione non riportata dal libro né dalle slide: aggiunta da me.
 character,来自,láizì,provenire da,lezione-2a,Dalla slide del 9 ottobre (lezione 2a): «come from». Es. 我来自都灵。
 character,住在,zhù zài,vivere a...,lezione-2b,
-character,在,zài,stare;trovarsi in un luogo;in (preposizione: introduce lo stato in luogo),v.;prep.;lezione-2b;lezione-2c,Verbo: 我在家 (sono a casa). Preposizione: 我在学校工作 (lavoro a scuola).
+character,在,zài,stare;trovarsi in un luogo;in (preposizione: introduce lo stato in luogo),v.;prep.;lezione-2b;lezione-2c;lezione-7c,Verbo: 我在家 (sono a casa). Preposizione: 我在学校工作 (lavoro a scuola).
 character,去,qù,andare,v.;lezione-2b,Movimento in allontanamento da chi parla (我去学校).
 character,来,lái,venire,v.;lezione-2b,Movimento verso chi parla (你来我家).
 character,回,huí,tornare,v.;lezione-2b,
-character,家,jiā,casa;famiglia,sost.;lezione-2b,
+character,家,jiā,casa;famiglia,sost.;lezione-2b;lezione-4d,
 character,路,lù,via;strada,sost.;lezione-2b,
 character,喂,wèi,pronto! (al telefono),escl.;lezione-2b,
 character,吧,ba,"su!, dai! (invito);…vero? (domanda di cui si pensa di conoscere la risposta)",part. modale esort.;lezione-2b,"Es. 吃饭吧 (su, mangiamo); 你是老师吧？ (sei insegnante, vero?). Significati dalla slide dell'11 novembre."
@@ -163,7 +163,7 @@ character,回国,huíguó,tornare nel proprio Paese,lezione-2b,Dalla slide dell'
 character,大街,dàjiē,corso (viale),lezione-2b,Dalla slide dell'11 novembre: REGINA大街 = Corso Regina.
 character,四合院,sìhéyuàn,cortile composto di quattro parti (casa tradizionale cinese),lezione-2b,
 character,筒子楼,tǒngzilóu,"palazzo a forma di tubo, con servizi condivisi (bagni e cucine)",lezione-2b,
-character,大路,dàlù,strada grande,lezione-2b,[ToCheck] Il libro non riporta il significato: «strada grande» è una mia ipotesi.
+character,大路,dàlù,strada grande,lezione-2b,[ToCheck] Il libro non riporta il significato: «strada grande» è una mia ipotesi. Nell'es. 1 di p. 46 è abbinato alla foto di una strada.
 character,第,dì,prefisso dei numeri ordinali,pref.;lezione-2c,"[ToCheck] Il glossario riporta solo «pref.»: la descrizione in italiano è mia, da verificare."
 character,第一,dì yī,primo,lezione-2c,
 character,第二,dì èr,secondo,lezione-2c,
@@ -172,7 +172,7 @@ character,学校,xuéxiào,scuola,sost.;lezione-2c,
 character,中学,zhōngxué,scuola media,sost.;lezione-2c,
 character,高中,gāozhōng,scuola secondaria superiore,sost.;lezione-2c,
 character,年级,niánjí,anno di corso,sost.;lezione-2c,
-character,上,shàng,frequentare (una scuola),v.;lezione-2c,
+character,上,shàng,frequentare (una scuola),v.;lezione-2c;lezione-3a,
 character,上学,shàngxué,andare a scuola;frequentare la scuola,v. a ogg. interno;lezione-2c,Verbo separabile: 上//学.
 character,读书,dúshū,leggere;studiare,v.;lezione-2c,Verbo separabile: 读//书.
 character,工作,gōngzuò,lavorare;lavoro,v.;sost.;lezione-2c,
@@ -180,13 +180,40 @@ character,做,zuò,fare,v.;lezione-2c,
 character,医生,yīshēng,medico,sost.;lezione-2c,
 character,医院,yīyuàn,ospedale,sost.;lezione-2c,
 character,教练,jiàoliàn,allenatore,sost.;lezione-2c,
-character,体育,tǐyù,sport,sost.;lezione-2c,Compare anche nella lezione 4d.
+character,体育,tǐyù,sport,sost.;lezione-2c;lezione-4d,Compare anche nella lezione 4d.
 character,图书馆,túshūguǎn,biblioteca,sost.;lezione-2c,
 character,上午,shàngwǔ,mattina,sost.;lezione-2c,
 character,下午,xiàwǔ,pomeriggio,sost.;lezione-2c,
-character,小学,xiǎoxué,scuola elementare,sost.;lezione-2c,Insegnata in classe l'11 novembre insieme alle scuole della 2c; nel glossario del libro è in lezione 4d.
-character,初中,chūzhōng,scuola secondaria inferiore;scuola media,sost.;lezione-2c,Insegnata in classe l'11 novembre insieme alle scuole della 2c; nel glossario del libro è in lezione 2d.
-character,大学,dàxué,università,sost.;lezione-2c,Insegnata in classe l'11 novembre insieme alle scuole della 2c; nel glossario del libro è in lezione 2d.
+character,小学,xiǎoxué,scuola elementare,sost.;lezione-2c;lezione-4d,Insegnata in classe l'11 novembre insieme alle scuole della 2c; nel glossario del libro è in lezione 4d.
+character,初中,chūzhōng,scuola secondaria inferiore;scuola media,sost.;lezione-2c;lezione-2d,Insegnata in classe l'11 novembre insieme alle scuole della 2c; nel glossario del libro è in lezione 2d.
+character,大学,dàxué,università,sost.;lezione-2c;lezione-2d,Insegnata in classe l'11 novembre insieme alle scuole della 2c; nel glossario del libro è in lezione 2d.
+character,里,lǐ,dentro;interno,lezione-2a,"Dalla scheda di scrittura dei caratteri (lezione 2a). [ToCheck] Il glossario riporta solo i composti (哪里, 这里): il significato del singolo carattere è dedotto da me. In 哪里 e 这里 funziona da suffisso di luogo."
+character,意,yì,significato;idea,lezione-2a,"Dalla scheda di scrittura dei caratteri (lezione 2a). [ToCheck] Il glossario riporta solo i composti (意大利, 有意思): il significato del singolo carattere è dedotto da me. In 意大利 ha solo valore fonetico."
+character,利,lì,profitto;vantaggio,lezione-2a,Dalla scheda di scrittura dei caratteri (lezione 2a). [ToCheck] Il glossario riporta solo i composti (意大利): il significato del singolo carattere è dedotto da me. In 意大利 ha solo valore fonetico.
+character,中,zhōng,centro;in mezzo,lezione-2a;lezione-2c,Significato dalla scheda della lezione 2c («centro»); il carattere è formato dal radicale 丨 e da 口. Compare in 中国 (2a) e 中学 (2c).
+character,歌,gē,canzone,lezione-2a,"Dalla scheda di scrittura dei caratteri (lezione 2a). [ToCheck] Il glossario riporta solo i composti (歌手, 唱歌): il significato del singolo carattere è dedotto da me."
+character,手,shǒu,mano,lezione-2a,"Dalla scheda di scrittura dei caratteri (lezione 2a). [ToCheck] Il glossario riporta solo i composti (歌手, 手机): il significato del singolo carattere è dedotto da me."
+character,别,bié,altro,pron.;lezione-2a;lezione-4a,Dalla scheda di scrittura dei caratteri (lezione 2a). Nel glossario del libro 别 (pron. «altro») è alla lezione 4a; qui compare in 别的 (2a).
+character,住,zhù,abitare;vivere,lezione-2b,Dalla scheda di scrittura dei caratteri (lezione 2b). [ToCheck] Il glossario riporta solo i composti (住在 «vivere a...»): il significato del singolo carattere è dedotto da me.
+character,教,jiāo,insegnare,v.;lezione-2b;lezione-2d,Dalla scheda di scrittura dei caratteri (lezione 2b). Il glossario riporta 教 (v. «insegnare») alla lezione 2d. Nei composti 教室 (2b) e 教练 (2c) si legge jiào.
+character,室,shì,stanza;locale,lezione-2b,"Dalla scheda di scrittura dei caratteri (lezione 2b). [ToCheck] Il glossario riporta solo i composti (教室 «aula», 室友 «coinquilino»): il significato del singolo carattere è dedotto da me."
+character,操,cāo,esercizio fisico;esercitarsi,lezione-2b,Dalla scheda di scrittura dei caratteri (lezione 2b). [ToCheck] Il glossario riporta solo i composti (操场 «campo sportivo»): il significato del singolo carattere è dedotto da me.
+character,场,chǎng,campo;spiazzo;luogo,lezione-2b,"Dalla scheda di scrittura dei caratteri (lezione 2b). [ToCheck] Il glossario riporta solo i composti (操场, 广场 «piazza»): il significato del singolo carattere è dedotto da me."
+character,地,dì,terra;suolo;luogo,lezione-2b,"Dalla scheda di scrittura dei caratteri (lezione 2b). [ToCheck] Il glossario riporta solo i composti (地图, 地方, 地理): il significato del singolo carattere è dedotto da me."
+character,图,tú,immagine;disegno;mappa,lezione-2b,"Dalla scheda di scrittura dei caratteri (lezione 2b). [ToCheck] Il glossario riporta solo i composti (地图 «mappa», 图书馆 «biblioteca»): il significato del singolo carattere è dedotto da me."
+character,房,fáng,casa;edificio,lezione-2b,"Dalla scheda di scrittura dei caratteri (lezione 2b). [ToCheck] Il glossario riporta solo i composti (房子 «casa», 房间 «stanza»): il significato del singolo carattere è dedotto da me."
+character,间,jiān,spazio;stanza,lezione-2b,"Dalla scheda di scrittura dei caratteri (lezione 2b). [ToCheck] Il glossario riporta solo i composti (房间 «stanza», 时间 «tempo»): il significato del singolo carattere è dedotto da me."
+character,友,yǒu,amico,lezione-2b,"Dalla scheda di scrittura dei caratteri (lezione 2b). [ToCheck] Il glossario riporta solo i composti (室友, 朋友, 网友 «amico online»): il significato del singolo carattere è dedotto da me."
+character,北,běi,nord,lezione-2b,Dalla slide dell'11 novembre: 北京 «capitale del nord». Anche nel glossario: 北方 «settentrione» (6b).
+character,南,nán,sud,lezione-2b,Dalla slide dell'11 novembre: 南京 «capitale del sud». Anche nel glossario: 南方 «meridione» (6b).
+character,海,hǎi,mare,sost.;lezione-2b,Dalla slide del 16 ottobre (hǎi 海 «mare»); nel glossario compare in 大海 «mare» (6d) e in 上海 (2b).
+character,学,xué,studiare;imparare,lezione-2c,"Dalla scheda di scrittura dei caratteri (lezione 2c). [ToCheck] Il glossario riporta solo i composti (学生, 学校, 学习, 上学): il significato del singolo carattere è dedotto da me."
+character,这儿,zhèr,qui,pron.;lezione-2a;lezione-4b,"Compare nella sezione «Suoni del cinese» (p. 40, lezione 2a); nel glossario del libro: lezione 4b."
+character,那儿,nàr,lì;là,pron.;lezione-2a;lezione-4b,"Compare nella sezione «Suoni del cinese» (p. 40, lezione 2a); nel glossario del libro: lezione 4b."
+character,玩儿,wánr,giocare,v.;lezione-2a;lezione-3a,"Compare nella sezione «Suoni del cinese» (p. 40, lezione 2a); nel glossario del libro: lezione 3a. Esempio di -r finale: 玩 wán + 儿 er = 玩儿 wánr."
+character,埃及,Āijí,Egitto,lezione-2a;lezione-4d,Compare nell'es. 3 di p. 43 (lezione 2a); nel glossario del libro: lezione 4d.
+character,印度,Yìndù,India,lezione-2a;lezione-4d,Compare nell'es. 3 di p. 43 (lezione 2a); nel glossario del libro: lezione 4d.
+character,认识,rènshi,conoscere,v.;lezione-2a;lezione-5a,Compare nel titolo «你认识她们吗？» di p. 43 (lezione 2a); nel glossario del libro: lezione 5a.
 sentence,你好吗？,Nǐ hǎo ma?,Come stai?,lezione-1a,
 sentence,我很好。你呢？,Wǒ hěn hǎo. Nǐ ne?,Sto molto bene. E tu?,lezione-1a,
 sentence,你好！我是马可。,Nǐ hǎo! Wǒ shì Mǎkě.,Ciao! Sono Marco.,lezione-1b,
@@ -285,3 +312,97 @@ sentence,我在大学学习。,Wǒ zài dàxué xuéxí.,Studio all'università.
 sentence,他们在学校的图书馆工作。,Tāmen zài xuéxiào de túshūguǎn gōngzuò.,Lavorano nella biblioteca della scuola.,lezione-2c,
 sentence,他是学校的体育教练。,Tā shì xuéxiào de tǐyù jiàoliàn.,È l'allenatore di sport della scuola.,lezione-2c,
 sentence,他退休了。,Tā tuìxiū le.,È andato in pensione.,lezione-1d,
+sentence,她们不是罗马人，她们是中国人。,"Tāmen bú shì Luómǎ rén, tāmen shì Zhōngguó rén.","Non sono di Roma, sono cinesi.",lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 215)."
+sentence,我哥哥是歌手。,Wǒ gēge shì gēshǒu.,Mio fratello maggiore è cantante.,lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 215)."
+sentence,一飞不是意大利人，他是中国人。,"Yīfēi bú shì Yìdàlì rén, tā shì Zhōngguó rén.","Yifei non è italiano, è cinese.",lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216)."
+sentence,这是白老师，他是法国人。,"Zhè shì Bái lǎoshī, tā shì Fǎguó rén.","Questo è l'insegnante Bai, è francese.",lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216)."
+sentence,她叫安娜，是威尼斯人。,"Tā jiào Ānnà, shì Wēinísī rén.","Si chiama Anna, è di Venezia.",lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216)."
+sentence,他们是我妈妈的学生，他们都是米兰人。,"Tāmen shì wǒ māma de xuésheng, tāmen dōu shì Mǐlán rén.","Sono studenti di mia madre, sono tutti di Milano.",lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216)."
+sentence,马可的爷爷和奶奶都是罗马人。,Mǎkě de yéye hé nǎinai dōu shì Luómǎ rén.,I nonni (paterni) di Marco sono entrambi di Roma.,lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216)."
+sentence,你好！你是哪儿的人？,Nǐ hǎo! Nǐ shì nǎr de rén?,Ciao! Di dove sei?,lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216)."
+sentence,她们是瑞士人吗？,Tāmen shì Ruìshì rén ma?,Sono svizzere?,lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216)."
+sentence,您是不是马可的爸爸？,Nín shì bu shì Mǎkě de bàba?,Lei è il papà di Marco (o no)?,lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216)."
+sentence,马老师是不是法国人？,Mǎ lǎoshī shì bu shì Fǎguó rén?,L'insegnante Ma è francese (o no)?,lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216)."
+sentence,你好！我是威尼斯人。,Nǐ hǎo! Wǒ shì Wēinísī rén.,Ciao! Sono di Venezia.,lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216)."
+sentence,不是！她们是意大利人。,Bú shì! Tāmen shì Yìdàlì rén.,No! Sono italiane.,lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216)."
+sentence,不是，我是马可的老师。,"Bú shì, wǒ shì Mǎkě de lǎoshī.","No, sono l'insegnante di Marco.",lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216)."
+sentence,我是韩国人。,Wǒ shì Hánguó rén.,Sono coreano.,lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216)."
+sentence,不是，他是意大利人。,"Bú shì, tā shì Yìdàlì rén.","No, è italiano.",lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216)."
+sentence,请问，你们是哪国人？,"Qǐngwèn, nǐmen shì nǎ guó rén?","Scusate, di che nazionalità siete?",lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216). Frase completata da un esercizio a riempimento: il libro non stampa la soluzione."
+sentence,我是中国人，他也是中国人，你们呢？,"Wǒ shì Zhōngguó rén, tā yě shì Zhōngguó rén, nǐmen ne?","Io sono cinese, anche lui è cinese, e voi?",lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216). Frase completata da un esercizio a riempimento: il libro non stampa la soluzione."
+sentence,你是哪儿的人？是罗马人吗？,Nǐ shì nǎr de rén? Shì Luómǎ rén ma?,Di dove sei? Sei di Roma?,lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216). Frase completata da un esercizio a riempimento: il libro non stampa la soluzione."
+sentence,我不是罗马人，我是威尼斯人。,"Wǒ bú shì Luómǎ rén, wǒ shì Wēinísī rén.","Non sono di Roma, sono di Venezia.",lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216)."
+sentence,你呢？你是哪里人？,Nǐ ne? Nǐ shì nǎlǐ rén?,E tu? Di dove sei?,lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216). Frase completata da un esercizio a riempimento: il libro non stampa la soluzione."
+sentence,我是米兰人。,Wǒ shì Mǐlán rén.,Sono di Milano.,lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216)."
+sentence,他是哪国人？,Tā shì nǎ guó rén?,Di che nazionalità è?,lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216). Frase ricostruita da un esercizio di riordino: il libro non stampa la soluzione."
+sentence,白老师是不是法国人？,Bái lǎoshī shì bu shì Fǎguó rén?,L'insegnante Bai è francese (o no)?,lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216). Frase ricostruita da un esercizio di riordino: il libro non stampa la soluzione."
+sentence,王一飞是哪儿的人？,Wáng Yīfēi shì nǎr de rén?,Di dove è Wang Yifei?,lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216). Frase ricostruita da un esercizio di riordino: il libro non stampa la soluzione."
+sentence,别的学生都是威尼斯人。,Biéde xuésheng dōu shì Wēinísī rén.,Gli altri studenti sono tutti di Venezia.,lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216). Frase ricostruita da un esercizio di riordino: il libro non stampa la soluzione."
+sentence,你妈妈是罗马人吗？,Nǐ māma shì Luómǎ rén ma?,Tua madre è di Roma?,lezione-2a,"Dagli esercizi del libro, lezione 2a (p. 216). Frase ricostruita da un esercizio di riordino: il libro non stampa la soluzione."
+sentence,她是中国人，住在罗马。,"Tā shì Zhōngguó rén, zhù zài Luómǎ.",È cinese e abita a Roma.,lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 219)."
+sentence,我在学校门口，我不回家。,"Wǒ zài xuéxiào ménkǒu, wǒ bù huí jiā.","Sono all'entrata della scuola, non torno a casa.",lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 219)."
+sentence,我的室友是北京人，他住在米兰。,"Wǒ de shìyǒu shì Běijīng rén, tā zhù zài Mǐlán.","Il mio coinquilino è di Pechino, abita a Milano.",lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220)."
+sentence,这是我奶奶，她住在上海。,"Zhè shì wǒ nǎinai, tā zhù zài Shànghǎi.","Questa è mia nonna, abita a Shanghai.",lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220)."
+sentence,你们的老师在操场。,Nǐmen de lǎoshī zài cāochǎng.,Il vostro insegnante è nel campo sportivo.,lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220)."
+sentence,我们都在教室，你来吗？,"Wǒmen dōu zài jiàoshì, nǐ lái ma?","Siamo tutti in aula, vieni anche tu?",lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220)."
+sentence,喂，我在家。你们在哪儿？,"Wèi, wǒ zài jiā. Nǐmen zài nǎr?","Pronto, sono a casa. Voi dove siete?",lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220)."
+sentence,我住在南京路。你呢？,Wǒ zhù zài Nánjīng lù. Nǐ ne?,Abito in via Nanchino. E tu?,lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220)."
+sentence,你在操场吗？,Nǐ zài cāochǎng ma?,Sei nel campo sportivo?,lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220)."
+sentence,你在哪儿？,Nǐ zài nǎr?,Dove sei?,lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220)."
+sentence,这是你的房间吗？,Zhè shì nǐ de fángjiān ma?,Questa è la tua stanza?,lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220)."
+sentence,不，我在教室。,"Bù, wǒ zài jiàoshì.","No, sono in aula.",lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220)."
+sentence,我也住在南京路。,Wǒ yě zhù zài Nánjīng lù.,Anch'io abito in via Nanchino.,lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220)."
+sentence,我在马可家。,Wǒ zài Mǎkě jiā.,Sono a casa di Marco.,lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220)."
+sentence,不是，这是我哥哥的房间。,"Bú shì, zhè shì wǒ gēge de fángjiān.","No, questa è la stanza di mio fratello maggiore.",lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220)."
+sentence,我住在罗马。,Wǒ zhù zài Luómǎ.,Abito a Roma.,lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220)."
+sentence,你好！你是中国人吗？,Nǐ hǎo! Nǐ shì Zhōngguó rén ma?,Ciao! Sei cinese?,lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220)."
+sentence,对。我住在上海。你呢？,Duì. Wǒ zhù zài Shànghǎi. Nǐ ne?,Sì. Abito a Shanghai. E tu?,lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220). Frase completata da un esercizio a riempimento: il libro non stampa la soluzione."
+sentence,我是意大利人。,Wǒ shì Yìdàlì rén.,Sono italiano.,lezione-2a;lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220)."
+sentence,你是不是路卡？,Nǐ shì bu shì Lùkǎ?,Sei Luca (o no)?,lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220)."
+sentence,不是，我是马可。路卡去教室。,"Bú shì, wǒ shì Mǎkě. Lùkǎ qù jiàoshì.","No, sono Marco. Luca va in aula.",lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220). Frase completata da un esercizio a riempimento: il libro non stampa la soluzione."
+sentence,对不起！没关系！,Duìbuqǐ! Méi guānxi!,Scusa! Non importa!,lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220)."
+sentence,你也来操场吧！,Nǐ yě lái cāochǎng ba!,Vieni anche tu al campo sportivo!,lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220). Frase completata da un esercizio a riempimento: il libro non stampa la soluzione."
+sentence,好吧。,Hǎo ba.,Va bene.,lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220)."
+sentence,她们也住在米兰吗？,Tāmen yě zhù zài Mǐlán ma?,Anche loro abitano a Milano?,lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220). Frase ricostruita da un esercizio di riordino: il libro non stampa la soluzione."
+sentence,我弟弟不住在南京路。,Wǒ dìdi bú zhù zài Nánjīng lù.,Mio fratello minore non abita in via Nanchino.,lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220). Frase ricostruita da un esercizio di riordino: il libro non stampa la soluzione."
+sentence,她的老师也不是意大利人。,Tā de lǎoshī yě bú shì Yìdàlì rén.,Anche la sua insegnante non è italiana.,lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220). Frase ricostruita da un esercizio di riordino: il libro non stampa la soluzione."
+sentence,他不去王老师的教室。,Tā bú qù Wáng lǎoshī de jiàoshì.,Non va nell'aula dell'insegnante Wang.,lezione-2b,"Dagli esercizi del libro, lezione 2b (p. 220). Frase ricostruita da un esercizio di riordino: il libro non stampa la soluzione."
+sentence,她们呢？她们是哪儿的人？,Tāmen ne? Tāmen shì nǎr de rén?,E loro? Di dove sono?,lezione-2a,"Dalle pagine del libro, lezione 2a."
+sentence,我是法国人。,Wǒ shì Fǎguó rén.,Sono francese.,lezione-2a,"Dalle pagine del libro, lezione 2a."
+sentence,对。我们是罗马人。,Duì. Wǒmen shì Luómǎ rén.,Esatto. Siamo di Roma.,lezione-2a,"Dalle pagine del libro, lezione 2a."
+sentence,不都是。我是意大利人。,Bù dōu shì. Wǒ shì Yìdàlì rén.,Non tutti. Io sono italiano.,lezione-2a,"Dalle pagine del libro, lezione 2a."
+sentence,她是米兰人。,Tā shì Mǐlán rén.,Lei è di Milano.,lezione-2a,"Dalle pagine del libro, lezione 2a."
+sentence,她叫小云。她是中国人。,Tā jiào Xiǎoyún. Tā shì Zhōngguó rén.,Si chiama Xiaoyun. È cinese.,lezione-2a,"Dalle pagine del libro, lezione 2a."
+sentence,她叫爱玛。她是威尼斯人。,Tā jiào Àimǎ. Tā shì Wēinísī rén.,Si chiama Emma. È di Venezia.,lezione-2a,"Dalle pagine del libro, lezione 2a."
+sentence,他叫路卡。他是罗马人。,Tā jiào Lùkǎ. Tā shì Luómǎ rén.,Si chiama Luca. È di Roma.,lezione-2a,"Dalle pagine del libro, lezione 2a."
+sentence,马可是意大利人，马可的爸爸是罗马人，他妈妈不是罗马人，她是威尼斯人。,"Mǎkě shì Yìdàlì rén, Mǎkě de bàba shì Luómǎ rén, tā māma bú shì Luómǎ rén, tā shì Wēinísī rén.","Marco è italiano, il padre di Marco è di Roma, sua madre non è di Roma, è di Venezia.",lezione-2a,"Dalle pagine del libro, lezione 2a."
+sentence,飞飞不是意大利人，他是中国人。,"Fēifēi bú shì Yìdàlì rén, tā shì Zhōngguó rén.","Feifei non è italiano, è cinese.",lezione-2a,"Dalle pagine del libro, lezione 2a."
+sentence,你认识她们吗？她们是哪里人，都是美国人吗？,"Nǐ rènshi tāmen ma? Tāmen shì nǎlǐ rén, dōu shì Měiguó rén ma?","Le conosci? Di dove sono, sono tutte americane?",lezione-2a,"Dalle pagine del libro, lezione 2a. (Ampliare il lessico)"
+sentence,她们都是歌手，不都是美国人。,"Tāmen dōu shì gēshǒu, bù dōu shì Měiguó rén.","Sono tutte cantanti, non sono tutte americane.",lezione-2a,"Dalle pagine del libro, lezione 2a. (Ampliare il lessico)"
+sentence,我住在上海。,Wǒ zhù zài Shànghǎi.,Abito a Shanghai.,lezione-2b,"Dalle pagine del libro, lezione 2b."
+sentence,我奶奶住在上海，她住在南京路。,"Wǒ nǎinai zhù zài Shànghǎi, tā zhù zài Nánjīng lù.","Mia nonna abita a Shanghai, abita in via Nanchino.",lezione-2b,"Dalle pagine del libro, lezione 2b."
+sentence,我在教室。,Wǒ zài jiàoshì.,Sono in aula.,lezione-2b,"Dalle pagine del libro, lezione 2b."
+sentence,你来吗？,Nǐ lái ma?,Vieni?,lezione-2b,"Dalle pagine del libro, lezione 2b."
+sentence,我不去。,Wǒ bú qù.,Non vado.,lezione-2b,"Dalle pagine del libro, lezione 2b."
+sentence,你来吧！,Nǐ lái ba!,"Dai, vieni!",lezione-2b,"Dalle pagine del libro, lezione 2b."
+sentence,我去意大利。,Wǒ qù Yìdàlì.,Vado in Italia.,lezione-2b,"Dalle pagine del libro, lezione 2b. (Grammatica)"
+sentence,他来意大利。,Tā lái Yìdàlì.,Lui viene in Italia.,lezione-2b,"Dalle pagine del libro, lezione 2b. (Grammatica)"
+sentence,我在意大利。,Wǒ zài Yìdàlì.,Sono in Italia.,lezione-2b,"Dalle pagine del libro, lezione 2b. (Grammatica)"
+sentence,我叫小爱，我是北京人。,"Wǒ jiào Xiǎoài, wǒ shì Běijīng rén.","Mi chiamo Xiao Ai, sono di Pechino.",lezione-2b,"Dalle pagine del libro, lezione 2b. (Ampliare il lessico)"
+sentence,这是北京地图，我家在这里。,"Zhè shì Běijīng dìtú, wǒ jiā zài zhèlǐ.","Questa è la mappa di Pechino, la mia casa è qui.",lezione-2b,"Dalle pagine del libro, lezione 2b. (Ampliare il lessico)"
+sentence,这是我家的房子，是一个四合院。,"Zhè shì wǒ jiā de fángzi, shì yí gè sìhéyuàn.","Questa è la casa della mia famiglia, è un siheyuan (casa a corte).",lezione-2b,"Dalle pagine del libro, lezione 2b. (Ampliare il lessico)"
+sentence,这是家门口，我爸爸、妈妈和我爷爷住在这里。,"Zhè shì jiā ménkǒu, wǒ bàba, māma hé wǒ yéye zhù zài zhèlǐ.","Questa è l'entrata di casa, qui abitano mio padre, mia madre e mio nonno.",lezione-2b,"Dalle pagine del libro, lezione 2b. (Ampliare il lessico)"
+sentence,我不住在北京，我是大学生，住在上海。,"Wǒ bú zhù zài Běijīng, wǒ shì dàxuéshēng, zhù zài Shànghǎi.","Io non abito a Pechino, sono universitaria e abito a Shanghai.",lezione-2b,"Dalle pagine del libro, lezione 2b. (Ampliare il lessico)"
+sentence,我和一个室友一起住。,Wǒ hé yí gè shìyǒu yìqǐ zhù.,Abito insieme a un coinquilino.,lezione-2b,"Dalle pagine del libro, lezione 2b. (Ampliare il lessico)"
+sentence,我哥哥也不在北京，他和他妻子住在南京。,"Wǒ gēge yě bú zài Běijīng, tā hé tā qīzi zhù zài Nánjīng.","Anche mio fratello maggiore non è a Pechino, abita a Nanchino con sua moglie.",lezione-2b,"Dalle pagine del libro, lezione 2b. (Ampliare il lessico)"
+sentence,这是什么？,Zhè shì shénme?,Che cos'è questo?,lezione-2b,"Dalle pagine del libro, lezione 2b. (Ampliare il lessico)"
+sentence,这是谁的房间？,Zhè shì shéi de fángjiān?,Di chi è questa stanza?,lezione-2b,"Dalle pagine del libro, lezione 2b. (Ampliare il lessico)"
+sentence,小爱和她室友的房间不大。,Xiǎoài hé tā shìyǒu de fángjiān bú dà.,La stanza di Xiao Ai e della sua coinquilina non è grande.,lezione-2b,"Dalle pagine del libro, lezione 2b. (Ampliare il lessico)"
+sentence,小爱家的房子在哪儿？,Xiǎoài jiā de fángzi zài nǎr?,Dov'è la casa della famiglia di Xiao Ai?,lezione-2b,"Dalle pagine del libro, lezione 2b. (Ampliare il lessico)"
+sentence,她是老师。,Tā shì lǎoshī.,È insegnante.,lezione-2c,"Dalle pagine del libro, lezione 2c."
+sentence,我爸爸是医生，在医院工作。,"Wǒ bàba shì yīshēng, zài yīyuàn gōngzuò.",Mio padre è medico e lavora in ospedale.,lezione-2c,Dall'indice delle espressioni lessicali del libro («La scuola»).
+sentence,我是米兰大学的学生。,Wǒ shì Mǐlán dàxué de xuésheng.,Sono studente dell'Università di Milano.,lezione-2c,Dall'indice delle espressioni lessicali del libro («La scuola»). 大学 nel glossario: lezione 2d.
+sentence,马可的妹妹去北京。,Mǎkě de mèimei qù Běijīng.,La sorella minore di Marco va a Pechino.,lezione-2b,Dall'es. 4 di p. 47 (lezione 2b). Frase completata abbinandola alla foto: il libro non stampa la soluzione.
+sentence,爱玛回家。,Àimǎ huí jiā.,Emma torna a casa.,lezione-2b,Dall'es. 4 di p. 47 (lezione 2b). Frase completata abbinandola alla foto: il libro non stampa la soluzione.
+sentence,老师在教室。,Lǎoshī zài jiàoshì.,L'insegnante è in aula.,lezione-2b,Dall'es. 4 di p. 47 (lezione 2b). Frase completata abbinandola alla foto: il libro non stampa la soluzione.
+sentence,我去安娜家，你来吗？,"Wǒ qù Ānnà jiā, nǐ lái ma?","Vado a casa di Anna, vieni anche tu?",lezione-2b,Dall'es. 5 di p. 47 (lezione 2b). Frase completata da un esercizio a riempimento: il libro non stampa la soluzione.
