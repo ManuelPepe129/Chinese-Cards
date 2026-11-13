@@ -214,6 +214,34 @@ character,玩儿,wánr,giocare,v.;lezione-2a;lezione-3a,"Compare nella sezione �
 character,埃及,Āijí,Egitto,lezione-2a;lezione-4d,Compare nell'es. 3 di p. 43 (lezione 2a); nel glossario del libro: lezione 4d.
 character,印度,Yìndù,India,lezione-2a;lezione-4d,Compare nell'es. 3 di p. 43 (lezione 2a); nel glossario del libro: lezione 4d.
 character,认识,rènshi,conoscere,v.;lezione-2a;lezione-5a,Compare nel titolo «你认识她们吗？» di p. 43 (lezione 2a); nel glossario del libro: lezione 5a.
+character,姓名,xìngmíng,nome e cognome,lezione-2c,Dalla scheda della lezione 2c (es. 7).
+character,年龄,niánlíng,età,lezione-2c,Dalla scheda della lezione 2c (es. 7).
+character,住址,zhùzhǐ,indirizzo,lezione-2c,Dalla scheda della lezione 2c (es. 7).
+character,学习,xuéxí,studiare,v.;lezione-2d,
+character,文化,wénhuà,cultura,sost.;lezione-2d,
+character,明天,míngtiān,domani,sost.;lezione-2d,
+character,明年,míngnián,l'anno prossimo,sost.;lezione-2d;lezione-6b,
+character,抖音,Dǒuyīn,TikTok cinese,lezione-2d,
+character,嗨,hāi / hēi,ciao,lezione-2d,
+character,英语,Yīngyǔ,lingua inglese,lezione-2d,Dalla lezione 2d (non nel glossario).
+character,法语,Fǎyǔ,lingua francese,lezione-2d,Dalla lezione 2d (non nel glossario).
+character,汉语,Hànyǔ,lingua cinese,lezione-2d,Dalla lezione 2d (non nel glossario).
+character,意大利语,Yìdàlìyǔ,lingua italiana,lezione-2d,Dalla lezione 2d (non nel glossario).
+character,德语,Déyǔ,lingua tedesca,lezione-2d,Dalla lezione 2d (non nel glossario).
+character,英文,Yīngwén,lingua inglese scritta,lezione-2d,Dalla lezione 2d (non nel glossario).
+character,法文,Fǎwén,lingua francese scritta,lezione-2d,Dalla lezione 2d (non nel glossario).
+character,德文,Déwén,lingua tedesca scritta,lezione-2d,Dalla lezione 2d (non nel glossario).
+character,意大利文,Yìdàlìwén,lingua italiana scritta,lezione-2d,Dalla lezione 2d (non nel glossario).
+character,语,yǔ,lingua,lezione-2d,Dal lessico della lezione 2d: il nome di una lingua = nome del paese (o solo il primo carattere) + 语.
+character,文,wén,lingua scritta;scrittura,lezione-2d,Dal lessico della lezione 2d: 文 indica la lingua scritta.
+character,北京大学,Běijīng dàxué,Università di Pechino,lezione-2d,Dalla lezione 2d (non nel glossario).
+character,第四中学,Dì sì zhōngxué,scuola media numero 4 (detta anche 四中),lezione-2d,"Dal testo «马北和四中» (p. 54, lezione 2d). Si chiama anche 四中 Sìzhōng."
+character,高考,gāokǎo,esame di accesso all'università,lezione-2d,"Dalle note culturali «La scuola in Cina» (p. 63, fine unità 2). Non è nel glossario."
+character,初等,chūděng,elementare (livello di istruzione),lezione-2d,"Dalle note culturali «La scuola in Cina» (p. 63, fine unità 2)."
+character,中等,zhōngděng,media (livello di istruzione),lezione-2d,"Dalle note culturali «La scuola in Cina» (p. 63, fine unità 2)."
+character,高等,gāoděng,superiore (livello di istruzione),lezione-2d,"Dalle note culturali «La scuola in Cina» (p. 63, fine unità 2)."
+character,医学院,yīxuéyuàn,facoltà di medicina,lezione-2d,"Dalle note culturali «La scuola in Cina» (p. 63, fine unità 2)."
+character,美术学院,měishù xuéyuàn,accademia di belle arti,lezione-2d,"Dalle note culturali «La scuola in Cina» (p. 63, fine unità 2)."
 sentence,你好吗？,Nǐ hǎo ma?,Come stai?,lezione-1a,
 sentence,我很好。你呢？,Wǒ hěn hǎo. Nǐ ne?,Sto molto bene. E tu?,lezione-1a,
 sentence,你好！我是马可。,Nǐ hǎo! Wǒ shì Mǎkě.,Ciao! Sono Marco.,lezione-1b,
@@ -406,3 +434,68 @@ sentence,马可的妹妹去北京。,Mǎkě de mèimei qù Běijīng.,La sorella
 sentence,爱玛回家。,Àimǎ huí jiā.,Emma torna a casa.,lezione-2b,Dall'es. 4 di p. 47 (lezione 2b). Frase completata abbinandola alla foto: il libro non stampa la soluzione.
 sentence,老师在教室。,Lǎoshī zài jiàoshì.,L'insegnante è in aula.,lezione-2b,Dall'es. 4 di p. 47 (lezione 2b). Frase completata abbinandola alla foto: il libro non stampa la soluzione.
 sentence,我去安娜家，你来吗？,"Wǒ qù Ānnà jiā, nǐ lái ma?","Vado a casa di Anna, vieni anche tu?",lezione-2b,Dall'es. 5 di p. 47 (lezione 2b). Frase completata da un esercizio a riempimento: il libro non stampa la soluzione.
+sentence,你做什么工作？,Nǐ zuò shénme gōngzuò?,Che lavoro fai?,lezione-2c,"Dai modelli di frasi, lezione 2c (p. 50)."
+sentence,你在哪儿工作？,Nǐ zài nǎr gōngzuò?,Dove lavori?,lezione-2c,"Dai modelli di frasi, lezione 2c (p. 50)."
+sentence,我在医院工作。,Wǒ zài yīyuàn gōngzuò.,Lavoro in ospedale.,lezione-2c,"Dai modelli di frasi e dalla grammatica, lezione 2c (p. 50)."
+sentence,我爸爸四十五岁，他在医院工作。,"Wǒ bàba sìshíwǔ suì, tā zài yīyuàn gōngzuò.",Mio padre ha quarantacinque anni e lavora in ospedale.,lezione-2c,Dagli esercizi della lezione 2c.
+sentence,我弟弟在第三中学上学，他十二岁。,"Wǒ dìdi zài Dì sān zhōngxué shàngxué, tā shí'èr suì.","Mio fratello minore va alla scuola media numero 3, ha dodici anni.",lezione-2c,Dagli esercizi della lezione 2c.
+sentence,我是中国人，住在北京。我上高中一年级。,"Wǒ shì Zhōngguó rén, zhù zài Běijīng. Wǒ shàng gāozhōng yī niánjí.",Sono cinese e abito a Pechino. Faccio il primo anno di scuola superiore.,lezione-2c,Dagli esercizi della lezione 2c.
+sentence,我妈妈和他妈妈都在工作。,Wǒ māma hé tā māma dōu zài gōngzuò.,Mia madre e sua madre lavorano entrambe.,lezione-2c,Dagli esercizi della lezione 2c.
+sentence,你们在北京做什么？,Nǐmen zài Běijīng zuò shénme?,Cosa fate a Pechino?,lezione-2c,Dagli esercizi della lezione 2c.
+sentence,你弟弟上高中几年级？,Nǐ dìdi shàng gāozhōng jǐ niánjí?,In che anno di scuola superiore è tuo fratello minore?,lezione-2c,Dagli esercizi della lezione 2c.
+sentence,我在北京中学上学。,Wǒ zài Běijīng zhōngxué shàngxué.,Vado alla scuola media di Pechino.,lezione-2c,Dagli esercizi della lezione 2c.
+sentence,他上不上学？,Tā shàng bu shàngxué?,Va a scuola (o no)?,lezione-2c,Dagli esercizi della lezione 2c.
+sentence,他在哪儿工作？,Tā zài nǎr gōngzuò?,Dove lavora?,lezione-2c,Dagli esercizi della lezione 2c.
+sentence,她在哪儿上学？,Tā zài nǎr shàngxué?,Dove va a scuola?,lezione-2c,Dagli esercizi della lezione 2c.
+sentence,她上几年级？,Tā shàng jǐ niánjí?,In che anno è?,lezione-2c,Dagli esercizi della lezione 2c.
+sentence,谁是你们的汉语老师？,Shéi shì nǐmen de Hànyǔ lǎoshī?,Chi è il vostro insegnante di cinese?,lezione-2c,Dagli esercizi della lezione 2c.
+sentence,王老师是我们的汉语老师。,Wáng lǎoshī shì wǒmen de Hànyǔ lǎoshī.,L'insegnante Wang è il nostro insegnante di cinese.,lezione-2c,Dagli esercizi della lezione 2c.
+sentence,我在南京第二中学上学。,Wǒ zài Nánjīng Dì èr zhōngxué shàngxué.,Vado alla scuola media numero 2 di Nanchino.,lezione-2d,Dalla pagina di apertura della lezione 2d.
+sentence,我爸爸教英语。,Wǒ bàba jiāo Yīngyǔ.,Mio padre insegna inglese.,lezione-2d,Dalla pagina di apertura della lezione 2d.
+sentence,我妈妈不工作。,Wǒ māma bù gōngzuò.,Mia madre non lavora.,lezione-2d,Dalla pagina di apertura della lezione 2d.
+sentence,我叫路卡，我是米兰大学的学生，我学习汉语。,"Wǒ jiào Lùkǎ, wǒ shì Mǐlán dàxué de xuésheng, wǒ xuéxí Hànyǔ.","Mi chiamo Luca, sono studente dell'Università di Milano e studio cinese.",lezione-2d,Dai testi della lezione 2d (p. 55).
+sentence,明天我去北京学习，我去北京大学学习汉语和中国文化。,"Míngtiān wǒ qù Běijīng xuéxí, wǒ qù Běijīng dàxué xuéxí Hànyǔ hé Zhōngguó wénhuà.",Domani vado a Pechino a studiare: vado all'Università di Pechino a studiare cinese e cultura cinese.,lezione-2d,Dai testi della lezione 2d (p. 55).
+sentence,我是王一飞，我是中国人，住在南京。,"Wǒ shì Wáng Yīfēi, wǒ shì Zhōngguó rén, zhù zài Nánjīng.","Sono Wang Yifei, sono cinese e abito a Nanchino.",lezione-2d,Dai testi della lezione 2d (p. 55).
+sentence,我在南京第二中学上学，我上高中二年级。,"Wǒ zài Nánjīng Dì èr zhōngxué shàngxué, wǒ shàng gāozhōng èr niánjí.","Vado alla scuola numero 2 di Nanchino, faccio il secondo anno di scuola superiore.",lezione-2d,Dai testi della lezione 2d (p. 55).
+sentence,我爸爸是医生，在医院工作，妈妈不工作。,"Wǒ bàba shì yīshēng, zài yīyuàn gōngzuò, māma bù gōngzuò.","Mio padre è medico e lavora in ospedale, mia madre non lavora.",lezione-2d,Dai testi della lezione 2d (p. 55).
+sentence,我叫爱玛，我是意大利人，住在罗马。,"Wǒ jiào Àimǎ, wǒ shì Yìdàlì rén, zhù zài Luómǎ.","Mi chiamo Emma, sono italiana e abito a Roma.",lezione-2d,Dai testi della lezione 2d (p. 55).
+sentence,我是学生，上初中三年级。,"Wǒ shì xuésheng, shàng chūzhōng sān niánjí.","Sono studentessa, faccio la terza media.",lezione-2d,Dai testi della lezione 2d (p. 55).
+sentence,我爸爸和我妈妈都是中学老师：爸爸教英语，妈妈教法语。,"Wǒ bàba hé wǒ māma dōu shì zhōngxué lǎoshī: bàba jiāo Yīngyǔ, māma jiāo Fǎyǔ.","Mio padre e mia madre sono entrambi insegnanti di scuola media: mio padre insegna inglese, mia madre francese.",lezione-2d,Dai testi della lezione 2d (p. 55).
+sentence,你学习什么？,Nǐ xuéxí shénme?,Che cosa studi?,lezione-2d,Dai modelli di frasi della lezione 2d (p. 56).
+sentence,我学习汉语。,Wǒ xuéxí Hànyǔ.,Studio cinese.,lezione-2d,Dai modelli di frasi della lezione 2d (p. 56).
+sentence,你教什么？,Nǐ jiāo shénme?,Che cosa insegni?,lezione-2d,Dai modelli di frasi della lezione 2d (p. 56).
+sentence,我教英语。,Wǒ jiāo Yīngyǔ.,Insegno inglese.,lezione-2d,Dai modelli di frasi della lezione 2d (p. 56).
+sentence,明天我去北京学习汉语。,Míngtiān wǒ qù Běijīng xuéxí Hànyǔ.,Domani vado a Pechino a studiare cinese.,lezione-2d,Dai modelli di frasi della lezione 2d (p. 56).
+sentence,我明天去北京学习汉语。,Wǒ míngtiān qù Běijīng xuéxí Hànyǔ.,Domani vado a Pechino a studiare cinese.,lezione-2d,Dalla grammatica della lezione 2d. Il tempo può stare prima o dopo il soggetto.
+sentence,我去北京学习汉语。,Wǒ qù Běijīng xuéxí Hànyǔ.,Vado a Pechino a studiare cinese.,lezione-2d,Dalla grammatica della lezione 2d. Esempio di verbi in serie.
+sentence,他几岁？,Tā jǐ suì?,Quanti anni ha?,lezione-2d,Dagli esercizi della lezione 2d.
+sentence,你爸爸做什么工作？,Nǐ bàba zuò shénme gōngzuò?,Che lavoro fa tuo padre?,lezione-2d,Dagli esercizi della lezione 2d.
+sentence,王老师教什么？,Wáng lǎoshī jiāo shénme?,Che cosa insegna l'insegnante Wang?,lezione-2d,Dagli esercizi della lezione 2d.
+sentence,他们是哪国学生？,Tāmen shì nǎ guó xuésheng?,Di che nazionalità sono gli studenti?,lezione-2d,Dagli esercizi della lezione 2d.
+sentence,路卡上几年级？,Lùkǎ shàng jǐ niánjí?,In che anno è Luca?,lezione-2d,Dagli esercizi della lezione 2d.
+sentence,路卡在哪儿上学？,Lùkǎ zài nǎr shàngxué?,Dove va a scuola Luca?,lezione-2d,Dagli esercizi della lezione 2d.
+sentence,路卡的妈妈在哪儿工作？,Lùkǎ de māma zài nǎr gōngzuò?,Dove lavora la mamma di Luca?,lezione-2d,Dagli esercizi della lezione 2d.
+sentence,路卡的爸爸工作吗？,Lùkǎ de bàba gōngzuò ma?,Il papà di Luca lavora?,lezione-2d,Dagli esercizi della lezione 2d.
+sentence,小云的妈妈在哪儿工作？,Xiǎoyún de māma zài nǎr gōngzuò?,Dove lavora la mamma di Xiaoyun?,lezione-2d,Dagli esercizi della lezione 2d.
+sentence,小云的妈妈做什么工作？,Xiǎoyún de māma zuò shénme gōngzuò?,Che lavoro fa la mamma di Xiaoyun?,lezione-2d,Dagli esercizi della lezione 2d.
+sentence,第四中学（也叫四中）是一个很有名的中学。,Dì sì zhōngxué (yě jiào Sìzhōng) shì yí gè hěn yǒumíng de zhōngxué.,La scuola media numero 4 (detta anche Sizhong) è una scuola molto famosa.,lezione-2d,"Dal testo «马北和四中» (p. 54, lezione 2d)."
+sentence,马北在这个学校上学，他上高中一年级。,"Mǎ Běi zài zhège xuéxiào shàngxué, tā shàng gāozhōng yī niánjí.","Ma Bei va a scuola in questo istituto, fa il primo anno di scuola superiore.",lezione-2d,"Dal testo «马北和四中» (p. 54, lezione 2d)."
+sentence,马北上午和下午都在学校读书，他下午也去操场。,"Mǎ Běi shàngwǔ hé xiàwǔ dōu zài xuéxiào dúshū, tā xiàwǔ yě qù cāochǎng.","Ma Bei studia a scuola sia la mattina sia il pomeriggio, e il pomeriggio va anche al campo sportivo.",lezione-2d,"Dal testo «马北和四中» (p. 54, lezione 2d)."
+sentence,马北的爸爸和妈妈都在这个学校工作，他们不是老师，他们在学校的图书馆工作。,"Mǎ Běi de bàba hé māma dōu zài zhège xuéxiào gōngzuò, tāmen bú shì lǎoshī, tāmen zài xuéxiào de túshūguǎn gōngzuò.","Il padre e la madre di Ma Bei lavorano entrambi in questa scuola: non sono insegnanti, lavorano nella biblioteca della scuola.",lezione-2d,"Dal testo «马北和四中» (p. 54, lezione 2d)."
+sentence,马北的哥哥也在第四中学工作，他叫马南。,"Mǎ Běi de gēge yě zài Dì sì zhōngxué gōngzuò, tā jiào Mǎ Nán.","Anche il fratello maggiore di Ma Bei lavora alla scuola numero 4, si chiama Ma Nan.",lezione-2d,"Dal testo «马北和四中» (p. 54, lezione 2d)."
+sentence,马南常常在操场工作，因为他是学校的体育教练。,"Mǎ Nán chángcháng zài cāochǎng gōngzuò, yīnwèi tā shì xuéxiào de tǐyù jiàoliàn.",Ma Nan lavora spesso al campo sportivo perché è l'allenatore di sport della scuola.,lezione-2d,"Dal testo «马北和四中» (p. 54, lezione 2d)."
+sentence,马北在哪个学校上学？,Mǎ Běi zài nǎge xuéxiào shàngxué?,In che scuola va Ma Bei?,lezione-2d,"Dal testo «马北和四中» (p. 54, lezione 2d)."
+sentence,马北的爸爸和妈妈在哪儿工作？,Mǎ Běi de bàba hé māma zài nǎr gōngzuò?,Dove lavorano il padre e la madre di Ma Bei?,lezione-2d,"Dal testo «马北和四中» (p. 54, lezione 2d)."
+sentence,马北下午去哪里？,Mǎ Běi xiàwǔ qù nǎlǐ?,Dove va Ma Bei il pomeriggio?,lezione-2d,"Dal testo «马北和四中» (p. 54, lezione 2d)."
+sentence,马北的哥哥在哪儿工作？,Mǎ Běi de gēge zài nǎr gōngzuò?,Dove lavora il fratello maggiore di Ma Bei?,lezione-2d,"Dal testo «马北和四中» (p. 54, lezione 2d)."
+sentence,马北的哥哥做什么工作？,Mǎ Běi de gēge zuò shénme gōngzuò?,Che lavoro fa il fratello maggiore di Ma Bei?,lezione-2d,"Dal testo «马北和四中» (p. 54, lezione 2d)."
+sentence,你们在哪里上学？,Nǐmen zài nǎlǐ shàngxué?,Dove andate a scuola?,lezione-2d,"Dal testo «马北和四中» (p. 54, lezione 2d)."
+sentence,你们的学校叫什么名字？,Nǐmen de xuéxiào jiào shénme míngzi?,Come si chiama la vostra scuola?,lezione-2d,"Dal testo «马北和四中» (p. 54, lezione 2d)."
+sentence,嗨！我是马文，马文是我在抖音的名字。,"Hāi! Wǒ shì Mǎ Wén, Mǎ Wén shì wǒ zài Dǒuyīn de míngzi.","Ciao! Sono Ma Wen, Ma Wen è il mio nome su TikTok.",lezione-2d,"Dal testo «嗨！我是马文» (p. 60, lezione 2d)."
+sentence,我是意大利人，今年十五岁。,"Wǒ shì Yìdàlì rén, jīnnián shíwǔ suì.","Sono italiano, quest'anno ho quindici anni.",lezione-2d,"Dal testo «嗨！我是马文» (p. 60, lezione 2d). Nel libro l'età è scritta con le cifre (15)."
+sentence,我在意大利的高中上二年级，我也在一家中文学校学习汉语和中国文化。,"Wǒ zài Yìdàlì de gāozhōng shàng èr niánjí, wǒ yě zài yì jiā Zhōngwén xuéxiào xuéxí Hànyǔ hé Zhōngguó wénhuà.",Faccio il secondo anno di liceo in Italia e studio anche cinese e cultura cinese in una scuola di cinese.,lezione-2d,"Dal testo «嗨！我是马文» (p. 60, lezione 2d)."
+sentence,我爸爸也和我一起学习汉语，老师叫他“老马”，他是工人。,"Wǒ bàba yě hé wǒ yìqǐ xuéxí Hànyǔ, lǎoshī jiào tā “Lǎo Mǎ”, tā shì gōngrén.","Anche mio padre studia cinese con me, l'insegnante lo chiama «Lao Ma», è operaio.",lezione-2d,"Dal testo «嗨！我是马文» (p. 60, lezione 2d)."
+sentence,我妈妈是老师，她明天去北京，她去北京的大学教意大利语。,"Wǒ māma shì lǎoshī, tā míngtiān qù Běijīng, tā qù Běijīng de dàxué jiāo Yìdàlìyǔ.","Mia madre è insegnante, domani va a Pechino, va a insegnare italiano in un'università di Pechino.",lezione-2d,"Dal testo «嗨！我是马文» (p. 60, lezione 2d)."
+sentence,我和爸爸明年去北京，我去北京上学，爸爸可以在北京工作。,"Wǒ hé bàba míngnián qù Běijīng, wǒ qù Běijīng shàngxué, bàba kěyǐ zài Běijīng gōngzuò.","Io e mio padre andiamo a Pechino l'anno prossimo: io vado a scuola a Pechino, mio padre può lavorare a Pechino.",lezione-2d,"Dal testo «嗨！我是马文» (p. 60, lezione 2d)."
+sentence,我们都住在北京。怎么样？不错吧？,Wǒmen dōu zhù zài Běijīng. Zěnmeyàng? Búcuò ba?,"Abiteremo tutti a Pechino. Che ne dite? Non male, vero?",lezione-2d,"Dal testo «嗨！我是马文» (p. 60, lezione 2d)."
+sentence,我们都学习汉语。,Wǒmen dōu xuéxí Hànyǔ.,Studiamo tutti cinese.,lezione-2d,Dal «Ripassiamo» di fine unità 2.

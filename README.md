@@ -201,7 +201,7 @@ character,爱,ài,amare;amore,v.;lezione-4c
 sentence,明天见！,míngtiān jiàn!,A domani!,lezione-5c
 ```
 
-`sample-data/sample.csv` mirrors the current `data.json` (units 1–2 up to lesson 2c, with a `notes` column), so importing it into an
+`sample-data/sample.csv` mirrors the current `data.json` (units 1–2, up to lesson 2d, with a `notes` column), so importing it into an
 empty list rebuilds the data. The previous list is kept as `sample-data/data.OLD.json` and `sample-data/sample.OLD.csv`.
 
 | Column | Required | Notes |
